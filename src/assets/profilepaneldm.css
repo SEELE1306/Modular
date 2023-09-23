@@ -1,0 +1,38 @@
+/* PROFILE PANEL IN DMS */
+[class*=profilePanel-] {
+	margin: -0.125em 0 -0.25em -0.375em;
+	padding: 0.5em 0.625em
+}
+.bannerPremium-kkSkPv {
+	margin: 0.75em;
+	width: calc(100% - 24px);
+	height: calc(100px - 24px) !important;
+	min-height: 108px !important;
+}
+[class*=profilePanelConnections-] {
+	padding: 0 0.75em
+}
+:is([class*=mutualGuildsList-], 
+[class*=mutualFriendsList-])>ul {
+	margin: 0.5em 0
+}
+[class*=connectionList-]>div:hover {
+	background: var(--background-modifier-hover)
+}
+:is([class*=mutualGuildsList-],
+[class*=mutualFriendsList-])>button {
+	background: transparent
+}
+[class*=connectionList-]>div {
+	padding: auto 0.5em;
+	margin: 0.5em;
+	border-radius: var(--modular-border-radius)
+}
+[class*=mutualGuildsList-], 
+[class*=mutualGuildsList-]>button {
+	border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0
+}
+[class*=mutualFriendsList-], 
+[class*=mutualFriendsList-]>button {
+	border-radius: 0 0 var(--modular-border-radius) var(--modular-border-radius)
+}

@@ -1,0 +1,67 @@
+/* VC CONTAINER + CONTROLS */
+.container-1zzFcN {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: unset;
+	border: none;
+	background: transparent !important
+}
+[class*=callContainer-] {
+	background: var(--background-primary-alt);
+	border-radius: var(--modular-border-radius);
+	padding: 0.5em;
+	margin: 0.25em
+}
+[class*=panels-] [class*=lookFilled-][class*=colorBrand-]:hover {
+	color: var(--interactive-hover);
+	background-color: var(--background-modifier-hover)
+}
+[class*=voiceChannelsButton-] {
+	border-radius: var(--modular-border-radius);
+	border: unset;
+	margin-left: 8px;
+	margin-right: 0;
+	background: var(--background-modifier-accent);
+	text-transform: none;
+	letter-spacing: 0.02em;
+	text-align: center
+}
+[class*=voiceChannelsButton-]:hover {
+	background: var(--background-modifier-selected)
+}
+[class*=voiceChannelsButton-]>div {
+	font-weight: 800;
+	color: var(--text-muted)
+}
+[class*=voiceChannelsButton-]:hover>div {
+	color: var(--interactive-hover)
+}
+.chatIcon-R5MUNn {
+	top: 8px;
+	right: 8px
+}
+[class*=contents-][class*=lineHeightReset-]>svg:hover {
+	color: var(--interactive-hover)
+}
+[class*=contents-][class*=lineHeightReset-]>svg:active {
+	color: var(--interactive-active)
+}
+.participantsButton-1WBdFP {
+	background: var(--background-tertiary)
+}
+[class*=overlayBottom-] [class*=statusContainer-]>svg {
+	background: var(--background-floating)
+}
+[class*=panels-]>[class*=panel-][class*=activityPanel-] {
+	padding: 0.75em 1em 0.75em 1em;
+	background: var(--background-tertiary)
+}
+.connection-3k9QeF, .voiceUsers-3gPcwY {
+	padding: 0.5em 0.75em
+}
+[class*=pictureInPictureVideo-] {
+	width: 480px;
+	height: 270px;
+	border-radius: var(--modular-border-radius)
+}

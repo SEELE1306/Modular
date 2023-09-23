@@ -1,0 +1,36 @@
+/* ROLE PILLS */
+.rolePill-78LFtg {
+	background: transparent
+}
+[class*="role-"] [class*="roleCircle-"]:before,
+[class*="actionButton-"][class*="role-"][class*="justifyCenter-"] {
+	border-radius: 10px
+}
+[class*=roles-] {
+	justify-content: center
+}
+[class*="role-"] {
+	transform: translate(0);
+	border: 0
+}
+[class*="role-"] [class*="roleRemoveIcon-"] {
+	margin: 0;
+	left: unset;
+	transform: translate(50%,-50%)
+}
+[class*="role-"] [class*="roleRemoveButton-"] {
+	position: static
+}
+[class*="role-"] [class*="roleCircle-"]:before {
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	background: inherit;
+	border: 2px solid transparent;
+	opacity: .4
+}

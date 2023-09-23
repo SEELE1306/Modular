@@ -1,0 +1,25 @@
+/* STAFF TAGS */
+span[data-tag="owner"] {
+	background-color: var(--owner-color);
+	color: var(--background-primary)
+}
+span[data-tag="admin"] {
+	background-color: var(--admin-color);
+	color: var(--background-primary)
+}
+span[data-tag="staff"] {
+	background-color: var(--staff-color);
+	color: var(--background-primary)
+}
+span[class*=botText-] {
+	font-weight: 1000;
+}
+[class^="userTagNoNickname-"]>[class*="botTag"] {
+	margin-bottom: 4px
+}
+span[data-tag="mod"], 
+span[data-tag="vc mod"], 
+.botTagRegular-kpctgU {
+	background-color: var(--mod-color);
+	color: var(--background-primary)
+}
