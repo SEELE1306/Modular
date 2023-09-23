@@ -1,0 +1,222 @@
+/* [[ END OF CUSTOMIZABLE PARAMETERS ]] */
+	
+:root, .theme-dark, .theme-light {
+	/* Radial Status */
+	--rs-offline-color: #636b75;
+	--rs-spacer-color: transparent;
+	--rs-show-platformindicators: none;
+	--rs-small-size: 0.85; 
+	--rs-small-roundness: 50%; 
+	--rs-small-thickness: 2.5px;
+	--rs-small-spacing: 4px;
+	--rs-medium-size: 0.85; 
+	--rs-medium-roundness: 50%; 
+	--rs-medium-thickness: 3px; 
+	--rs-medium-spacing: 4.5px; 
+	--rs-large-size: 0.85;
+	--rs-large-roundness: 50%;
+	--rs-large-thickness: 4px; 
+	--rs-large-spacing: 5.5px; 
+	/* Chat bubbles requirements */
+	--background-message-hover: none;
+	--background-mentioned: none;
+	--background-mentioned-hover: none;
+	--background-message-highlight: none;
+	--background-message-automod: none;
+	--background-message-automod-hover: none;
+	--info-warning-foreground: none;
+	/* Scrollbars */
+	--scrollbar-auto-thumb: var(--modular-accent-color);
+	--scrollbar-auto-track: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
+	--scrollbar-thin-thumb: var(--modular-accent-color);
+	--scrollbar-thin-track: transparent;
+	/* Quotes */
+	--quote-vertical-spacing: 4px;
+	--quote-horizontal-spacing: 10px;
+	--quote-border-radius: 4px;
+	--profile-role-pill-background-color: none;
+	--font-primary: var(--font-main), var(--font-fallback);
+	--font-display: var(--font-main), var(--font-fallback);
+	--font-header: var(--font-main), var(--font-fallback);
+	--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	--text-link: var(--text-normal);
+	--modular-version: "v1.0.1";
+	}
+	
+/*  [[ ALL SINGLE BORDER-RADIUS ELEMENTS ]] */
+.base-2v-uc0, 
+span[class*=botTag-][class*=botTagRegular-],
+.colorDefault-2_rLdz, 
+.layout-1qmrhw,
+.containerDefault-YUSmu3 .link-1_kTxV, 
+.wrapper-NhbLHG .link-1_kTxV, 
+.content-1Tgc42, 
+ul.resultsGroup-cfY57t [class*=option-],
+[class^="popout-"], 
+[id="guild-header-popout"], 
+.contentWrapper-3vHNP2, 
+[class*=reactionTooltip], 
+[class*=searchHeader] [class*=item-], 
+header[class*=searchHeader-],
+.animatedContainer-2laTjx, 
+.content-yjf30S [style="height: 84px;"], 
+.bannerImage-ubW8K-, 
+.animatedBannerHoverLayer-129r1v, 
+img[class*=assetsLargeImageSpotify-], 
+.buttonsContainer-3iOFIV > button, 
+.lookFilled-1H2Jvj.colorGreen-jIPCAS, 
+[class*=userPanel], 
+[class*=menu-], 
+[class*=content-]>button[class*=button-], 
+.disabledButtonWrapper-1m0hYZ>button, 
+.buttonsWrapper-2ARRp1>button, 
+.side-1lrxIh .item-2GWPIy, 
+:is([class*="userProfile"], [class*="userPopout"]) [class*="bannerPremium"], 
+.popoutContainer-2wbmiM,
+.buttons-3snlAO,
+#vc-spotify-player #vc-spotify-album-image,
+[class*=callContainer-],
+[class*=voiceChannelsButton-],
+[class*=pictureInPictureVideo-],
+.channelAttachmentArea-HwpkuQ,
+.icon-2W8DHg,
+.searchBar-jGtisZ,
+.container-2McqkF,
+[class*=searchResultsWrap],
+.channelNameContainer-4pFmC-,
+.searchHeaderTabList-3CZMQB.side-1lrxIh .item-2GWPIy,
+[class*=searchResult-],
+h3[class*=name-][class*=container-]>div,
+.container-1oeRFJ,
+.connectedAccountContainer-3aLMHJ,
+.markup-eYLPri.messageContent-2t3eCI a,
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
+[class*=submenu-][class*=menu-], .contentWrapper-2f9yME,
+.wrapper-2vIMkT,
+.mention, 
+.wrapper-1ZcZW-,
+[class*=pronouns-],
+.section-28YDOf>div:not(.roles-3vQPxb), 
+.container-3g15px, 
+.userInfoText-2MFCmH, 
+.vc-rdb-view,
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"],
+.vc-rdb-input,
+.userPopoutInner-nv9Y92 .markup-eYLPri a, 
+.userInfoText-2MFCmH.markup-eYLPri a, 
+.timestamp-6-ptG3,
+.userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy,
+.embedFull-1HGV2S,
+.panels-3wFtMD,
+.chatContent-3KubbW,
+.pageBody-23bo4p,
+.container-1NXEtd,
+.container-ZMc96U,
+.container-3XgAHv,
+.container-3YcgdM,
+.scroller-WSmht3,
+.searchBar-3TnChZ
+.channelRow-4X_3fi,
+.search-kg4MrS,
+[class*=userPanelOuter-],
+:is(.userInfo-regn9W, .constrainedRow-3y91Xf) .button-ejjZWC,
+.profile-3xd-Cg, 
+.pageBody-29jwEZ,
+.tabBarItem-onx_ng, 
+.tabBarItem-MeqDhW,
+button[class*=returnButton-],
+[class*=container-]>[class*=wrapper-][class*=userSelectNone-],
+.peopleColumn-1wMU14,
+.buttonsContainer-Nmgy7x>div,
+.privateChannels-oVe7HL,
+.wrapper-1NNaWG,
+.container-1SX9VC,
+.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1,
+#message-actions, 
+#message, 
+#image-context,
+.members-3WRCEx,
+#vc-membercount,
+.content-1jQy2l.container-2IKOsH,
+[class*=messagesPopoutWrap-], 
+[class*=recentMentionsPopout-],
+[class*=animatedContainer-],
+.container-x8Y1ix,
+.rowContainer-3t7486,
+.header-3OsQeK,
+[class*=connectionList-]>div,
+.wordmarkWindows-2dq6rw::after,
+.nowPlayingColumn-1eCBCN,
+.container-1oAagU,
+.theme-dark .pageWrapper-2PwDoS,
+.container-32HW5s, 
+.container-2oNtJn,
+[class*=reactionInner-],
+.scroller-3X7KbA>button,
+.container-TT--xs,
+.welcomeCTA-3GMMRK button,
+.banner-1AB1xq,
+.theme-dark .tooltip-33Jwqe, 
+.toolbar-37BrJ5,
+.messageContainer-3VTXBC .jumpButton-1ITAeq,
+.topPill-2vcLsa .item-2GWPIy,
+[class*=recentMentionsPopout-] .channelHeader-DFRX8q,
+.listRow-2nO1T6
+[class*=messagesPopoutWrap-] .messageGroupWrapper-1jf_7C,
+.jumpButton-1ZwI_j
+{
+	border-radius: var(--modular-border-radius) !important;
+}
+
+/* [[ ALL DISPLAY: NONE ELEMENTS ]] */
+span[class*=dot-][class*=maskSecondary-], 
+[class^=jumpToPresentBar]>[class^=barButtonMain], 
+.ownerIcon-255uKo,
+span[data-tag="webhook"], 
+[class*=unread-], 
+[class^="threadSuggestionBar"], 
+.unreadMentionsBar-ZXXoOH,
+:is(.message-24k8JL .cozy-VmLDNB, .container-3XgAHv .message-2CShn3, .messagesPopoutWrap-3zryHW) .timestamp-p1Df1m, .cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, 
+.replying-eZ7p5z::before, 
+.mentioned-Tre-dv::before, 
+.children-3xh0VB:after, 
+#app-mount .form-3gdLxP:before, 
+.section-28YDOf:has(.roles-3vQPxb:empty),
+.lastSection-q3HCfo, 
+.content-1jQy2l::before, 
+.chat-25x62K::before, 
+[class*=userPanelInner-]::before, 
+.iconContainerLeft-1Kr6X4, 
+.bar-wDIGjg, 
+.attachment-16cAbS, 
+.avatar-l9Txm5, 
+.blob-1uHjdp, 
+.tabBody-2dgbAs::before, 
+.wrapper-1NNaWG:after, 
+.accountProfilePopoutWrapper-3GskID .section-28YDOf,
+.option-ayUoaq::before, 
+.option-ayUoaq::after, 
+.wordmarkWindows-2dq6rw path:not(:first-child), 
+#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, 
+.separator-3ng7S5:before, 
+.emojiItemDisabled-3VVnwp, 
+.automodMessage-265YwJ:before, 
+.content-2V2neN .iconContainer-21RCa3, 
+.uploadInput-YH_iku, 
+.vc-rdb-view .avatar-2e8lTP.clickable-31pE3P,
+.userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), 
+.userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account)
+{
+	display: none !important;
+}
