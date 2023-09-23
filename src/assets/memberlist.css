@@ -1,0 +1,71 @@
+/* [[ MEMBER LIST ]] */
+.members-3WRCEx {
+	background: var(--background-primary-alt);
+	margin: 0.25em;
+}
+h3[class*=membersGroup-] {
+	color: var(--text-normal);
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent);
+	height: 24px;
+	margin: 0.5em 0 0.5em 0.5em;
+	border-radius: calc(var(--modular-border-radius) * 0.75);
+	padding-top: 4px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: none
+}
+.container-1oeRFJ {
+	margin: 0.5em 0 0.25em auto;
+	padding: 0;
+	background: var(--background-modifier-accent)
+}
+.container-1oeRFJ:has(span[data-tag="owner"]) {
+	background: color-mix( in srgb, var(--owner-color) 33%, transparent);
+}
+.container-1oeRFJ:has(span[data-tag="admin"]) {
+	background: color-mix( in srgb, var(--admin-color) 33%, transparent);
+}
+.container-1oeRFJ:has(span[data-tag="staff"]) {
+	background: color-mix( in srgb, var(--staff-color) 33%, transparent);
+}
+.container-1oeRFJ:has(span[data-tag="mod"]) {
+	background: color-mix( in srgb, var(--mod-color) 33%, transparent);
+}
+#vc-membercount {
+	margin: 0.5em 0em 0.5em 0.5em !important;
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 8px !important;
+	background: var(--background-modifier-accent);
+}
+#vc-membercount>div:nth-child(1)::after {
+	content: "Online";
+	margin-left: 0.25em;
+	font-weight: 800;
+	color: var(--modular-accent-color);
+}
+#vc-membercount>div:nth-child(2)::after {
+	content: "Members";
+	margin-left: 0.25em;
+	font-weight: 800;
+	color: var(--interactive-muted);
+}
+#vc-membercount>div:nth-child(2) {
+	margin-left: -15px;
+}
+#vc-membercount span {
+	font-weight: 800;
+}
+#vc-membercount span[style="width: 6px; height: 6px; border-radius: 50%; border: 3px solid var(--primary-400); display: inline-block; margin-right: 0.5em; margin-left: 1em;"] {
+	border-color: var(--interactive-muted) !important;
+}
+#vc-membercount span[style="color: var(--primary-400);"] {
+	color: var(--interactive-muted) !important;
+}
+#vc-membercount span[style="color: var(--green-360);"] {
+	color: var(--modular-accent-color) !important;
+}
+#vc-membercount span[style="background-color: var(--green-360); width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 0.5em;"] {
+	background-color: var(--modular-accent-color) !important;
+}

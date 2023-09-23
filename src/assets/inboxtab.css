@@ -1,0 +1,61 @@
+/* INBOX TAB */
+[class*=messagesPopoutWrap-]>div {
+	background: var(--background-tertiary);
+	max-height: 83vh;
+	padding: 0
+}
+[class*=messagesPopoutWrap-], 
+[class*=recentMentionsPopout-] {
+	background: var(--background-tertiary);
+	height: 80vh;
+	box-shadow: var(--modular-shadow)
+}
+[class*=recentMentionsPopout-] .channelHeader-DFRX8q {
+	margin: 0 0 4px 0;
+	padding: 0 8px 0 20px;
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+}
+[class*=recentMentionsPopout-] .container-1A0qQO {
+	background: var(--background-tertiary);
+}
+.collapseButton-39-IRc {
+	left: 0;
+	margin-top: -4px
+}
+.badge-1ImhlC {
+	border-radius: calc(var(--guild-item-radius));
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
+	box-shadow: 0 0 0 1.5px var(--modular-accent-color);
+	top: 0
+}
+.messages-23can0, .messageContainer-3VTXBC {
+	background: var(--background-primary-alt)
+}
+.messages-23can0 .avatar-2e8lTP {
+	margin: -0.125em 0 0 0
+}
+.topPill-2vcLsa .item-2GWPIy {
+	background: var(--background-modifier-accent);
+}
+.container-iA3Qrz .channelHeader-DFRX8q {
+	margin-left: 16px;
+	margin-bottom: 4px;
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+}
+.channelHeader-DFRX8q .closeButton-3CiW2j {
+	margin-left: 0;
+	margin-right: 4px;
+}
+.messageContainer-3VTXBC .avatar-2e8lTP {
+	margin: -0.25em 0.5em 0 -0.25em;
+}
+.jumpButton-1ITAeq {
+	top: 16px;
+	padding: 8px;
+}
+.jumpButton-1ITAeq:hover {
+	background: var(--modular-accent-color);
+}
+.jumpButton-1ITAeq div {
+	margin-top: -3px;
+}

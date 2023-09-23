@@ -1,0 +1,69 @@
+/* CHAT BUBBLES */
+.channelTextArea-1FufC0 {
+	background-color: transparent
+}
+.messageListItem-ZZ7v6g {
+	margin-left: 10px
+}
+.zalgo-26OfGz:has(.contents-2MsGLg) {
+	max-width: fit-content;
+}
+.markup-eYLPri.messageContent-2t3eCI a {
+	background: var(--background-modifier-accent);
+	color: var(--text-link);
+	font-weight: 600;
+	padding: 0 0.5em;
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover .markup-eYLPri.messageContent-2t3eCI a,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) a
+{
+	background: var(--background-modifier-hover);
+	text-decoration: none;
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	margin: 0.125em 0;
+	padding: 0.5em;
+	background: color-mix(in srgb, var(--chat-bubble-default) 50%, transparent);
+	max-width: max-content
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: color-mix(in srgb, var(--chat-bubble-default) 100%, transparent);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	background: color-mix(in srgb, var(--chat-bubble-replying) 25%, transparent);
+	max-width: max-content
+}
+.scrollableContainer-15eg7h {
+	background: transparent
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
+.replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: color-mix(in srgb, var(--chat-bubble-replying) 50%, transparent);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 25%, transparent);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
+.mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 50%, transparent);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	background: color-mix(in srgb, var(--chat-bubble-automod) 25%, transparent);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: color-mix(in srgb, var(--chat-bubble-automod) 50%, transparent);
+}
