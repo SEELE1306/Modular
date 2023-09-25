@@ -1,48 +1,48 @@
 /* [[ END OF CUSTOMIZABLE PARAMETERS ]] */
-	
+
 :root, .theme-dark, .theme-light {
-	/* Radial Status */
-	--rs-offline-color: #636b75;
-	--rs-spacer-color: transparent;
-	--rs-show-platformindicators: none;
-	--rs-small-size: 0.85; 
-	--rs-small-roundness: 50%; 
-	--rs-small-thickness: 2.5px;
-	--rs-small-spacing: 4px;
-	--rs-medium-size: 0.85; 
-	--rs-medium-roundness: 50%; 
-	--rs-medium-thickness: 3px; 
-	--rs-medium-spacing: 4.5px; 
-	--rs-large-size: 0.85;
-	--rs-large-roundness: 50%;
-	--rs-large-thickness: 4px; 
-	--rs-large-spacing: 5.5px; 
-	/* Chat bubbles requirements */
-	--background-message-hover: none;
-	--background-mentioned: none;
-	--background-mentioned-hover: none;
-	--background-message-highlight: none;
-	--background-message-automod: none;
-	--background-message-automod-hover: none;
-	--info-warning-foreground: none;
-	/* Scrollbars */
-	--scrollbar-auto-thumb: var(--modular-accent-color);
-	--scrollbar-auto-track: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
-	--scrollbar-thin-thumb: var(--modular-accent-color);
-	--scrollbar-thin-track: transparent;
-	/* Quotes */
-	--quote-vertical-spacing: 4px;
-	--quote-horizontal-spacing: 10px;
-	--quote-border-radius: 4px;
-	--profile-role-pill-background-color: none;
-	--font-primary: var(--font-main), var(--font-fallback);
-	--font-display: var(--font-main), var(--font-fallback);
-	--font-header: var(--font-main), var(--font-fallback);
-	--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-	--text-link: var(--text-normal);
-	--modular-version: "v1.0.1";
-	}
-	
+/* Radial Status */
+--rs-offline-color: #636b75;
+--rs-spacer-color: transparent;
+--rs-show-platformindicators: none;
+--rs-small-size: 0.85; 
+--rs-small-roundness: 50%; 
+--rs-small-thickness: 2.5px;
+--rs-small-spacing: 4px;
+--rs-medium-size: 0.85; 
+--rs-medium-roundness: 50%; 
+--rs-medium-thickness: 3px; 
+--rs-medium-spacing: 4.5px; 
+--rs-large-size: 0.85;
+--rs-large-roundness: 50%;
+--rs-large-thickness: 4px; 
+--rs-large-spacing: 5.5px; 
+/* Chat bubbles requirements */
+--background-message-hover: none;
+--background-mentioned: none;
+--background-mentioned-hover: none;
+--background-message-highlight: none;
+--background-message-automod: none;
+--background-message-automod-hover: none;
+--info-warning-foreground: none;
+/* Scrollbars */
+--scrollbar-auto-thumb: var(--modular-accent-color);
+--scrollbar-auto-track: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
+--scrollbar-thin-thumb: var(--modular-accent-color);
+--scrollbar-thin-track: transparent;
+/* Quotes */
+--quote-vertical-spacing: 4px;
+--quote-horizontal-spacing: 10px;
+--quote-border-radius: 4px;
+--profile-role-pill-background-color: none;
+--font-primary: var(--font-main), var(--font-fallback);
+--font-display: var(--font-main), var(--font-fallback);
+--font-header: var(--font-main), var(--font-fallback);
+--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+--text-link: var(--text-normal);
+--modular-version: "v1.0.1";
+}
+
 /*  [[ ALL SINGLE BORDER-RADIUS ELEMENTS ]] */
 .base-2v-uc0, 
 span[class*=botTag-][class*=botTagRegular-],
@@ -176,7 +176,7 @@ button[class*=returnButton-],
 [class*=messagesPopoutWrap-] .messageGroupWrapper-1jf_7C,
 .jumpButton-1ZwI_j
 {
-	border-radius: var(--modular-border-radius) !important;
+border-radius: var(--modular-border-radius) !important;
 }
 
 /* [[ ALL DISPLAY: NONE ELEMENTS ]] */
@@ -218,5 +218,5 @@ span[data-tag="webhook"],
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), 
 .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account)
 {
-	display: none !important;
+display: none !important;
 }
