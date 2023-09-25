@@ -1,5 +1,6 @@
 /* [[ EXTRA IMPORTS GO HERE ]] */
-@import url(https://seele1306.github.io/Modular/src/Root.css);
+@import url(https://seele1306.github.io/Modular/src/comp/Root.css);
+@import url(https://seele1306.github.io/Modular/src/comp/pre.css);
 
 /* [[ START OF MAIN CSS FILE ]] */
 
@@ -44,230 +45,7 @@
 	--titlebar-name: "Your name here";
 }
 
-	/* 2. [[ END OF CUSTOMIZABLE PARAMETERS ]] */
-	
-	:root, .theme-dark, .theme-light {
-		/* Radial Status */
-		--rs-offline-color: #636b75;
-		--rs-spacer-color: transparent;
-		--rs-show-platformindicators: none;
-		  --rs-small-size: 0.85; 
-		  --rs-small-roundness: 50%; 
-		  --rs-small-thickness: 2.5px;
-		  --rs-small-spacing: 4px;
-		  --rs-medium-size: 0.85; 
-		  --rs-medium-roundness: 50%; 
-		  --rs-medium-thickness: 3px; 
-		  --rs-medium-spacing: 4.5px; 
-		  --rs-large-size: 0.85;
-		  --rs-large-roundness: 50%;
-		 --rs-large-thickness: 4px; 
-		  --rs-large-spacing: 5.5px; 
-		/* Chat bubbles requirements */
-		--background-message-hover: none;
-		--background-mentioned: none;
-		--background-mentioned-hover: none;
-		--background-message-highlight: none;
-		--background-message-automod: none;
-		--background-message-automod-hover: none;
-		--info-warning-foreground: none;
-		/* Scrollbars */
-		--scrollbar-auto-thumb: var(--modular-accent-color);
-		--scrollbar-auto-track: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
-		--scrollbar-thin-thumb: var(--modular-accent-color);
-		--scrollbar-thin-track: transparent;
-		/* Quotes */
-		--quote-vertical-spacing: 4px;
-		--quote-horizontal-spacing: 10px;
-		--quote-border-radius: 4px;
-		--profile-role-pill-background-color: none;
-		--font-primary: var(--font-main), var(--font-fallback);
-		--font-display: var(--font-main), var(--font-fallback);
-		--font-header: var(--font-main), var(--font-fallback);
-		--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-		--text-link: var(--text-normal);
-		--modular-version: "v1.0.0";
-	}
-	
-/* 3. [[ ALL SINGLE BORDER-RADIUS ELEMENTS ]] */
-.base-2v-uc0, 
-span[class*=botTag-][class*=botTagRegular-],
-.colorDefault-2_rLdz, 
-.layout-1qmrhw,
-.containerDefault-YUSmu3 .link-1_kTxV, 
-.wrapper-NhbLHG .link-1_kTxV, 
-.content-1Tgc42, 
-ul.resultsGroup-cfY57t [class*=option-],
-[class^="popout-"], 
-[id="guild-header-popout"], 
-.contentWrapper-3vHNP2, 
-[class*=reactionTooltip], 
-[class*=searchHeader] [class*=item-], 
-header[class*=searchHeader-],
-.animatedContainer-2laTjx, 
-.content-yjf30S [style="height: 84px;"], 
-.bannerImage-ubW8K-, 
-.animatedBannerHoverLayer-129r1v, 
-img[class*=assetsLargeImageSpotify-], 
-.buttonsContainer-3iOFIV > button, 
-.lookFilled-1H2Jvj.colorGreen-jIPCAS, 
-[class*=userPanel], 
-[class*=menu-], 
-[class*=content-]>button[class*=button-], 
-.disabledButtonWrapper-1m0hYZ>button, 
-.buttonsWrapper-2ARRp1>button, 
-.side-1lrxIh .item-2GWPIy, 
-:is([class*="userProfile"], [class*="userPopout"]) [class*="bannerPremium"], 
-.popoutContainer-2wbmiM,
-.buttons-3snlAO,
-#vc-spotify-player #vc-spotify-album-image,
-[class*=callContainer-],
-[class*=voiceChannelsButton-],
-[class*=pictureInPictureVideo-],
-.channelAttachmentArea-HwpkuQ,
-.icon-2W8DHg,
-.searchBar-jGtisZ,
-.container-2McqkF,
-[class*=searchResultsWrap],
-.channelNameContainer-4pFmC-,
-.searchHeaderTabList-3CZMQB.side-1lrxIh .item-2GWPIy,
-[class*=searchResult-],
-h3[class*=name-][class*=container-]>div,
-.container-1oeRFJ,
-.connectedAccountContainer-3aLMHJ,
-.markup-eYLPri.messageContent-2t3eCI a,
-.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
-.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
-.container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
-.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
-.replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
-.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
-.mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
-.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
-.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *),
-[class*=submenu-][class*=menu-], .contentWrapper-2f9yME,
-.wrapper-2vIMkT,
-.mention, 
-.wrapper-1ZcZW-,
-[class*=pronouns-],
-.section-28YDOf>div:not(.roles-3vQPxb), 
-.container-3g15px, 
-.userInfoText-2MFCmH, 
-.vc-rdb-view,
-div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"],
-.vc-rdb-input,
-.userPopoutInner-nv9Y92 .markup-eYLPri a, 
-.userInfoText-2MFCmH.markup-eYLPri a, 
-.timestamp-6-ptG3,
-.userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy,
-.embedFull-1HGV2S,
-.panels-3wFtMD,
-.chatContent-3KubbW,
-.pageBody-23bo4p,
-.container-1NXEtd,
-.container-ZMc96U,
-.container-3XgAHv,
-.container-3YcgdM,
-.scroller-WSmht3,
-.searchBar-3TnChZ
-.channelRow-4X_3fi,
-.search-kg4MrS,
-[class*=userPanelOuter-],
-:is(.userInfo-regn9W, .constrainedRow-3y91Xf) .button-ejjZWC,
-.profile-3xd-Cg, 
-.pageBody-29jwEZ,
-.tabBarItem-onx_ng, 
-.tabBarItem-MeqDhW,
-button[class*=returnButton-],
-[class*=container-]>[class*=wrapper-][class*=userSelectNone-],
-.peopleColumn-1wMU14,
-.buttonsContainer-Nmgy7x>div,
-.privateChannels-oVe7HL,
-.wrapper-1NNaWG,
-.container-1SX9VC,
-.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1,
-#message-actions, 
-#message, 
-#image-context,
-.members-3WRCEx,
-#vc-membercount,
-.content-1jQy2l.container-2IKOsH,
-[class*=messagesPopoutWrap-], 
-[class*=recentMentionsPopout-],
-[class*=animatedContainer-],
-.container-x8Y1ix,
-.rowContainer-3t7486,
-.header-3OsQeK,
-[class*=connectionList-]>div,
-.wordmarkWindows-2dq6rw::after,
-.nowPlayingColumn-1eCBCN,
-.container-1oAagU,
-.theme-dark .pageWrapper-2PwDoS,
-.container-32HW5s, 
-.container-2oNtJn,
-[class*=reactionInner-],
-.scroller-3X7KbA>button,
-.container-TT--xs,
-.welcomeCTA-3GMMRK button,
-.banner-1AB1xq,
-.theme-dark .tooltip-33Jwqe, 
-.toolbar-37BrJ5,
-.messageContainer-3VTXBC .jumpButton-1ITAeq,
-.topPill-2vcLsa .item-2GWPIy,
-[class*=recentMentionsPopout-] .channelHeader-DFRX8q,
-.listRow-2nO1T6
-[class*=messagesPopoutWrap-] .messageGroupWrapper-1jf_7C,
-.jumpButton-1ZwI_j
-{
-	border-radius: var(--modular-border-radius) !important;
-}
-
-/* 4. [[ ALL DISPLAY: NONE ELEMENTS ]] */
-span[class*=dot-][class*=maskSecondary-], 
-[class^=jumpToPresentBar]>[class^=barButtonMain], 
-.ownerIcon-255uKo,
-span[data-tag="webhook"], 
-[class*=unread-], 
-[class^="threadSuggestionBar"], 
-.unreadMentionsBar-ZXXoOH,
-:is(.message-24k8JL .cozy-VmLDNB, .container-3XgAHv .message-2CShn3, .messagesPopoutWrap-3zryHW) .timestamp-p1Df1m, .cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, 
-.replying-eZ7p5z::before, 
-.mentioned-Tre-dv::before, 
-.children-3xh0VB:after, 
-#app-mount .form-3gdLxP:before, 
-.section-28YDOf:has(.roles-3vQPxb:empty),
-.lastSection-q3HCfo, 
-.content-1jQy2l::before, 
-.chat-25x62K::before, 
-[class*=userPanelInner-]::before, 
-.iconContainerLeft-1Kr6X4, 
-.bar-wDIGjg, 
-.attachment-16cAbS, 
-.avatar-l9Txm5, 
-.blob-1uHjdp, 
-.tabBody-2dgbAs::before, 
-.wrapper-1NNaWG:after, 
-.accountProfilePopoutWrapper-3GskID .section-28YDOf,
-.option-ayUoaq::before, 
-.option-ayUoaq::after, 
-.wordmarkWindows-2dq6rw path:not(:first-child), 
-#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, 
-.separator-3ng7S5:before, 
-.emojiItemDisabled-3VVnwp, 
-.automodMessage-265YwJ:before, 
-.content-2V2neN .iconContainer-21RCa3, 
-.uploadInput-YH_iku, 
-.vc-rdb-view .avatar-2e8lTP.clickable-31pE3P,
-.userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), 
-.userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account)
-{
-	display: none !important;
-}
-
-/* 5. [[ SPOTIFY CONTROLS ]] */
+/* [[ SPOTIFY CONTROLS ]] */
 #vc-spotify-player {
 	background: transparent !important;
 	border-bottom: none;
@@ -364,7 +142,7 @@ span[data-tag="webhook"],
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-disc-2'%3E%3Ccircle cx='12' cy='12' r='4'%3E%3C/circle%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='12' x2='12' y2='12.01'%3E%3C/line%3E%3C/svg%3E");
 }
 
-/* 6. [[ VC CONTAINER + CONTROLS ]] */
+/* [[ VC CONTAINER + CONTROLS ]] */
 .container-1zzFcN {
 	display: flex;
 	flex-direction: column;
@@ -429,7 +207,7 @@ span[data-tag="webhook"],
 	height: 270px;
 }
 
-/* 7. [[ QUOTES ]] */
+/* [[ QUOTES ]] */
 [class*="markup-"] blockquote {
 	padding: var(--quote-vertical-spacing) var(--quote-horizontal-spacing);
 	background: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
@@ -447,7 +225,7 @@ span[data-tag="webhook"],
 	background-color: var(--modular-accent-color)
 }
 
-/* 8. [[ CHAT AREA ]] */
+/* [[ CHAT AREA ]] */
 :is(main,section)[class^=chatContent] .form-3gdLxP {
 	padding: 0.25em;
 }
@@ -632,7 +410,7 @@ main[class^=chatContent] [class^=attachedBars] {
     }
 }
 
-/* 9. [[ DISCORD DM AND FAVORITES ICON ]] */
+/* [[ DISCORD DM AND FAVORITES ICON ]] */
 .wrapper-3kah-n .childWrapper-1j_1ub {
 	background-color: var(--background-modifier-accent);
 	color: var(--info-positive-foreground)
@@ -642,7 +420,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: var(--background-modifier-selected)
 }
 
-/* 10. [[ STAFF TAGS ]] */
+/* [[ STAFF TAGS ]] */
 span[data-tag="owner"] {
 	background-color: var(--owner-color);
 	color: var(--background-primary)
@@ -668,7 +446,7 @@ span[data-tag="vc mod"],
 	color: var(--background-primary)
 }
 
-/* 11. [[ CHANNEL LIST ]] */
+/* [[ CHANNEL LIST ]] */
 .colorDefault-2_rLdz {
 	color: var(--interactive-muted)
 }
@@ -711,7 +489,7 @@ span[data-tag="vc mod"],
 	color: var(--text-normal)
 }
 
-/* 12. [[ SHIKI CODEBLOCKS ]] */
+/* [[ SHIKI CODEBLOCKS ]] */
 .markup-eYLPri code {
 	margin: 0.5em 0 0.5em 0
 }
@@ -730,7 +508,7 @@ code:not(code.inline) {
 	width: max-content
 }
 
-/* 13. [[ ROLE PILLS ]] */
+/* [[ ROLE PILLS ]] */
 .rolePill-78LFtg {
 	background: transparent
 }
@@ -767,7 +545,7 @@ code:not(code.inline) {
 	opacity: .4
 }
 
-/* 14. [[ MAIN BACKGROUND COMPONENTS ]] */
+/* [[ MAIN BACKGROUND COMPONENTS ]] */
 .bg-1QIAus {
 	filter: brightness(var(--modular-background-brightness));
 	background: var(--modular-background) center/cover no-repeat !important
@@ -794,7 +572,7 @@ code:not(code.inline) {
 	background: var(--background-primary-alt);
 }
 
-/* 15. [[ RADIAL STATUS ]] */
+/* [[ RADIAL STATUS ]] */
 .contents-2MsGLg .avatar-2e8lTP {
 	margin-top: -0.625em;
 }
@@ -803,7 +581,7 @@ code:not(code.inline) {
 	margin: 0 0.5em 0 0;
 }
 
-/* 16. [[ STATUS (ALTERNATIVE) ]] */
+/* [[ STATUS (ALTERNATIVE) ]] */
 
 rect[fill="#23a55a"], rect[fill="rgba(35, 165, 90, 1)"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
@@ -826,7 +604,7 @@ rect[fill="#593695"] {
 	fill: var(--rs-streaming-color) !important;
 }
 
-/* 17. [[ CHAT BUBBLES ]] */
+/* [[ CHAT BUBBLES ]] */
 .channelTextArea-1FufC0 {
 	background-color: transparent
 }
@@ -893,7 +671,7 @@ rect[fill="#593695"] {
 	background: color-mix(in srgb, var(--chat-bubble-automod) 50%, transparent);
 }
 
-/* 18. [[ PROFILES ]] */
+/* [[ PROFILES ]] */
 .customStatus-19KW6v .customStatusEmoji-1GD8RK {
 	margin: 0.25em -0.75em 0.5em;
 	position: relative;
@@ -1063,7 +841,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	left: 12.5%
 }
 
-/* 19. [[ EMBEDS ]] */
+/* [[ EMBEDS ]] */
 .embedFull-1HGV2S {
 	overflow: hidden;
 	border-left: none;
@@ -1094,7 +872,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	background-color: inherit
 }
 
-/* 20. [[ PLATFORM INDICATORS ]] */
+/* [[ PLATFORM INDICATORS ]] */
 :is(.membersWrap-3NUR2t, .privateChannels-oVe7HL) .vc-platform-indicator>svg {
 	width: 12.5px !important;
 	height: 12.5px !important;
