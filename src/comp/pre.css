@@ -40,7 +40,7 @@
 --font-header: var(--font-main), var(--font-fallback);
 --font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 --text-link: var(--text-normal);
---modular-version: "v1.0.1";
+--modular-version: "v1.0.2";
 }
 
 /*  [[ ALL SINGLE BORDER-RADIUS ELEMENTS ]] */
