@@ -358,14 +358,14 @@
 [class^=jumpToPresentBar] > [class^=barButtonMain] {
   	flex: 0 0 auto;
 }
-/*main[class^=chatContent] [class^=attachedBars] {
+main[class^=chatContent] [class^=attachedBars] {
 	min-height: unset !important;
 	position: relative;
-	padding: 0 0 0px 0 !important;
+	padding: 0 0 4px 0 !important;
 	margin: -4px 20px 0 -4px !important;
 	border-radius: 0 0 var(--modular-border-radius) 0 !important;
   	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
-}*/
+}
 .replyBar-1oi75v {
   	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
 }
