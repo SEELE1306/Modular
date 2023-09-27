@@ -8,6 +8,8 @@
 @import url(https://raw.githubusercontent.com/coolesding/shiggycord/v2/Deploy/Radialstatus.css); /* comment out to disable */
 /* Oneko instead of default DM button */
 @import url(https://seele1306.github.io/Snippets/OnekoDM/import.css); /* comment out to disable */
+/* Hide toolbar on top */
+@import url(https://seele1306.github.io/Modular/src/assets/toolbarhide.css);
 
 :root {
 	/* 
