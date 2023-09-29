@@ -88,7 +88,7 @@
 --text-link: var(--text-normal);
 --modular-major-version: "v1";
 --modular-intermediate-version: "3";
---modular-small-version: "0"
+--modular-small-version: "1"
 }
 
 /* [[ ALL SINGLE BORDER-RADIUS ELEMENTS ]] */
@@ -564,7 +564,7 @@ margin-bottom: 0px
 :is(main,section)[class^=chatContent] > form > :last-child[class^=typing] {
  top: -32px;
  right: 24px;
-padding: 4px 16px 4px 4px;
+padding: 4px 16px 4px 8px;
  margin-left: auto;
  width: fit-content;
 border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
@@ -867,8 +867,21 @@ margin: 0 0 0 8px;
 color: inherit;
 text-shadow: 0 0 5px black
 }
+/* Message types */
 .contents-2MsGLg .username-h_Y3Us::after {
 content: "wrote:"
+}
+.message-2CShn3:has(.edited-1v5nT8) .username-h_Y3Us::after {
+content: "wrote and edited:";
+}
+.message-2CShn3:has(.mediaAttachmentsContainer-1WGRWy) .username-h_Y3Us::after {
+content: "sent attachment(s):"
+}
+.message-2CShn3:has(.stickerAsset-4c7Oqy) .username-h_Y3Us::after {
+content: "sent a sticker:"
+}
+.message-2CShn3:has(.emoji.jumboable) .username-h_Y3Us::after {
+content: "sent emoji(s):"
 }
 .hasReply-2Cr4KE .contents-2MsGLg .username-h_Y3Us::after {
 content: "replied:"
