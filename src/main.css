@@ -871,22 +871,22 @@ text-shadow: 0 0 5px black
 .contents-2MsGLg .username-h_Y3Us::after {
 content: "wrote:"
 }
-.message-2CShn3:has(.edited-1v5nT8) .username-h_Y3Us::after {
+.message-2CShn3:has(.edited-1v5nT8) .contents-2MsGLg .username-h_Y3Us::after {
 content: "wrote and edited:";
 }
-.message-2CShn3:has(.mediaAttachmentsContainer-1WGRWy) .username-h_Y3Us::after {
+.message-2CShn3:has(.mediaAttachmentsContainer-1WGRWy, .embed-hKpSrO) .contents-2MsGLg .username-h_Y3Us::after {
 content: "sent attachment(s):"
 }
-.message-2CShn3:has(.stickerAsset-4c7Oqy) .username-h_Y3Us::after {
+.message-2CShn3:has(.stickerAsset-4c7Oqy) .contents-2MsGLg .username-h_Y3Us::after {
 content: "sent a sticker:"
 }
-.message-2CShn3:has(.emoji.jumboable) .username-h_Y3Us::after {
+.message-2CShn3:has(.emoji.jumboable) .contents-2MsGLg .username-h_Y3Us::after {
 content: "sent emoji(s):"
 }
-.hasReply-2Cr4KE .contents-2MsGLg .username-h_Y3Us::after {
+.hasReply-2Cr4KE .contents-2MsGLg .contents-2MsGLg .username-h_Y3Us::after {
 content: "replied:"
 }
-.mentioned-Tre-dv .contents-2MsGLg .username-h_Y3Us::after {
+.mentioned-Tre-dv .contents-2MsGLg .contents-2MsGLg .username-h_Y3Us::after {
 content: "mentioned:"
 }
 /* Start of Chat Bubbles */
