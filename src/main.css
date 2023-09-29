@@ -2495,7 +2495,6 @@ fill: var(--modular-accent-color)
 .wrapper-3kah-n[data-list-item-id="guildsnav___home"]::before {
 margin-left: 3px
 }
-
 .wrapper-2vIMkT,
 .full-motion .wrapper-2vIMkT:hover {
 background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
