@@ -883,10 +883,10 @@ content: "sent a sticker:"
 .message-2CShn3:has(.emoji.jumboable) .contents-2MsGLg .username-h_Y3Us::after {
 content: "sent emoji(s):"
 }
-.hasReply-2Cr4KE .contents-2MsGLg .contents-2MsGLg .username-h_Y3Us::after {
+.hasReply-2Cr4KE .contents-2MsGLg .username-h_Y3Us::after {
 content: "replied:"
 }
-.mentioned-Tre-dv .contents-2MsGLg .contents-2MsGLg .username-h_Y3Us::after {
+.mentioned-Tre-dv .contents-2MsGLg .username-h_Y3Us::after {
 content: "mentioned:"
 }
 /* Start of Chat Bubbles */
