@@ -73,9 +73,9 @@ transform: translateX(-50%) !important
 border-radius: calc(var(--guild-item-radius)/2)
 }
 .base-3IDx3L {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
+background: color-mix(in srgb, var(--brand-experiment) 50%, black) !important;
 font-size: 12px;
-box-shadow: 0 0 0 1.5px var(--modular-accent-color)
+box-shadow: 0 0 0 1.5px var(--brand-experiment)
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
 height: 40px !important;
@@ -92,11 +92,11 @@ height: 40px !important
 }
 .item-2LIpTv {
 max-height: 40px;
-background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent);
+background: color-mix(in srgb, var(--brand-experiment) 50%, transparent);
 border-radius: 0
 }
 .item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
-background-color: var(--modular-accent-color)
+background-color: var(--brand-experiment)
 }
 .circleIcon-3489FI {
 margin-left: 0
