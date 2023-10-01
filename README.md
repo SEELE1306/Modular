@@ -162,6 +162,8 @@ midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, dese
 | `--client-orientation`               | `row` or `row-reverse`, `row-reverse` for server list and user panel **on the right** | `row`                                                       |
 | `--memberlist-orientation`           | `row` or `row-reverse`, `row-reverse` for member list **on the left**                 | `row`                                                       |
 | `--friendlist-orientation`           | `row` or `row-reverse`, `row-reverse` for now playing tab **on the left**             | `row`                                                       |
+| `--datebar-width`           | In `px`, increase the value to shrink the new date bar                                                      | `56px`
+
 | `--titlebar-name`                    | Enter whatever you like in between the quotation marks                                  | Your name here |
 
 ##  Special thanks to
