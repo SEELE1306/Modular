@@ -9,7 +9,7 @@
 --modular-hue: 232;
 --modular-saturation: 23%;
 --modular-lightness: 18%;
---modular-accent-color: var(--ctp-macchiato-mauve);
+--brand-experiment: var(--ctp-macchiato-mauve);
 --rs-online-color: var(--ctp-macchiato-green);
 --rs-idle-color: var(--ctp-macchiato-yellow);
 --rs-dnd-color: var(--ctp-macchiato-red);
@@ -33,9 +33,10 @@
 --section-thickness: 0px;
 --guild-item-radius: 4px;
 --guild-item-spacing: 4px;
+--datebar-width: 56px;
 --modular-background-blur-strength: 10px;
 --modular-background-brightness: 100%;
---modular-transparency:25%;
+--modular-transparency: 25%;
 --sidebar-orientation: column;
 --guild-orientation: row;
 --client-orientation: row;
@@ -72,9 +73,9 @@
 --background-message-automod-hover: none;
 --info-warning-foreground: none;
 /* Scrollbars */
---scrollbar-auto-thumb: var(--modular-accent-color);
---scrollbar-auto-track: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
---scrollbar-thin-thumb: var(--modular-accent-color);
+--scrollbar-auto-thumb: var(--brand-experiment);
+--scrollbar-auto-track: color-mix(in srgb, var(--brand-experiment) 25%, transparent);
+--scrollbar-thin-thumb: var(--brand-experiment);
 --scrollbar-thin-track: transparent;
 /* Quotes */
 --quote-vertical-spacing: 4px;
@@ -88,7 +89,7 @@
 --text-link: var(--text-normal);
 --modular-major-version: "v1";
 --modular-intermediate-version: "3";
---modular-small-version: "1"
+--modular-small-version: "2"
 }
 
 /* [[ ALL SINGLE BORDER-RADIUS ELEMENTS ]] */
@@ -302,7 +303,7 @@ font-weight: 600
 background: var(--background-modifier-accent)
 }
 #vc-spotify-player [class*=barFill] {
-background: var(--modular-accent-color)
+background: var(--brand-experiment)
 }
 #vc-spotify-player .mini-28oMa3 .grabber-3R-Rx9 {
 background-color: var(--interactive-active);
@@ -434,19 +435,19 @@ height: 270px
 /* [[ QUOTES ]] */
 [class*="markup-"] blockquote {
 padding: var(--quote-vertical-spacing) var(--quote-horizontal-spacing);
-background: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
+background: color-mix(in srgb, var(--brand-experiment) 25%, transparent);
 border-top-right-radius: var(--quote-border-radius);
 border-bottom-right-radius: var(--quote-border-radius)
 }
 .theme-dark[class*="markup-"] blockquote {
-color: var(--modular-accent-color);
-background-color: var(--modular-accent-color)
+color: var(--brand-experiment);
+background-color: var(--brand-experiment)
 }
 .theme-light[class*="markup-"] blockquote {
-color: var(--modular-accent-color)
+color: var(--brand-experiment)
 }
 [class*="blockquoteDivider-"] {
-background-color: var(--modular-accent-color)
+background-color: var(--brand-experiment)
 }
 
 /* [[ CHAT AREA ]] */
@@ -465,7 +466,7 @@ position: relative;
 top: 2px
 }
 .sendIcon-1HcEzu path {
-fill: var(--modular-accent-color)
+fill: var(--brand-experiment)
 }
 .form-3gdLxP .buttons-uaqb-5 {
  overflow: hidden;
@@ -509,7 +510,7 @@ justify-content: center
  opacity: 100%
 }
 .buttons-uaqb-5 > :is(div,button):hover svg {
-color: var(--modular-accent-color)
+color: var(--brand-experiment)
 }
 .buttons-uaqb-5 > :is(div,button) svg {
  transition: all 0.3s
@@ -528,7 +529,7 @@ margin: 0
 border-top: none
 }
 .channelAttachmentArea-HwpkuQ {
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black);
 margin-left: 0.25em;
 padding: 0.5em;
 gap: 8px;
@@ -544,7 +545,7 @@ max-width: 150px
 transform: translate(0, -16px)
 }
 .actionBar-1ozugS .button-3bklZh {
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 /* align edges of chatbox to sides */
 :is(main,section)[class^=chatContent] > form {
@@ -568,7 +569,7 @@ padding: 4px 16px 4px 8px;
  margin-left: auto;
  width: fit-content;
 border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 /* jump to presz */
 [class^=jumpToPresentBar] {
@@ -576,7 +577,7 @@ border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
  border-radius: 0px;
  border-top-right-radius: var(--modular-border-radius);
  opacity: 1;
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black);
  right: unset
 }
 [class^=jumpToPresentBar] > [class^=barButtonMain] {
@@ -588,10 +589,10 @@ position: relative;
 padding: 0 0 4px 0 !important;
 margin: -4px 20px 0 -4px !important;
 border-radius: 0 0 var(--modular-border-radius) 0 !important;
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 .replyBar-1oi75v {
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 /* Positions both the *new messages* and *viewing old messages* bars on top of the channel text area. */
 .barBase-3xxDXu {
@@ -611,7 +612,7 @@ margin-right: 4px
 margin-left: calc(var(--bar-edges)* -1);
 border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
  inset: auto var(--bar-edges) 0;
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 .messagesWrapper-RpOMA3:has(.jumpToPresentBar-1cEnH0) .newMessagesBar-1hF-9G {
  left: auto
@@ -685,7 +686,7 @@ color: var(--interactive-muted)
 .selected-1-Z6gm .layout-1qmrhw,
 .channel-1Shao0.container-32HW5s>.interactiveSelected-29CP8y,
 .navButtonActive-1EqC5l {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent)
+background: color-mix(in srgb, var(--brand-experiment) 50%, transparent)
 }
 :has(.content-1Tgc42:hover) .wrapper-NhbLHG.modeConnected-NrO4cP .link-1_kTxV {
 background: transparent !important
@@ -1204,23 +1205,23 @@ background: var(--background-tertiary) !important
 }
 .theme-dark .tooltip-33Jwqe,
 .toolbar-37BrJ5 {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
-box-shadow: 0 0 0 1px var(--modular-accent-color)
+background: color-mix(in srgb, var(--brand-experiment) 50%, black);
+box-shadow: 0 0 0 1px var(--brand-experiment)
 }
 /* normal tooltips */
 .theme-dark .tooltipTop-CgYHUZ .tooltipPointer-sMBQqe {
-border-top-color: var(--modular-accent-color);
+border-top-color: var(--brand-experiment);
 scale: 1.5;
 margin-top: 4px
 }
 .theme-dark .tooltipBottom-1itlv3 .tooltipPointer-sMBQqe {
-border-top-color: var(--modular-accent-color);
+border-top-color: var(--brand-experiment);
 scale: 1.5;
 margin-bottom: 4px
 }
 /* guild tooltip */
 .theme-dark .tooltipRight-1UPNyA .tooltipPointer-sMBQqe {
-border-top-color: var(--modular-accent-color);
+border-top-color: var(--brand-experiment);
 scale: 1.5;
 left: -14px
 }
@@ -1230,10 +1231,10 @@ margin-bottom: 4px
 }
 /* text options tooltip */
 .toolbar-37BrJ5:before {
-border-top-color: var(--modular-accent-color)
+border-top-color: var(--brand-experiment)
 }
 .buttons-3snlAO .contents-3NembX svg {
-color: var(--modular-accent-color)
+color: var(--brand-experiment)
 }
 .buttons-3snlAO button:hover {
 background: var(--background-modifier-hover)
@@ -1256,7 +1257,7 @@ background: var(--background-modifier-accent)
 content: "Online";
 margin-left: 0.25em;
 font-weight: 800;
-color: var(--modular-accent-color)
+color: var(--brand-experiment)
 }
 #vc-membercount>div:nth-child(2)::after {
 content: "Members";
@@ -1277,10 +1278,10 @@ border-color: var(--interactive-muted) !important
 color: var(--interactive-muted) !important
 }
 #vc-membercount span[style="color: var(--green-360);"] {
-color: var(--modular-accent-color) !important
+color: var(--brand-experiment) !important
 }
 #vc-membercount span[style="background-color: var(--green-360); width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 0.5em;"] {
-background-color: var(--modular-accent-color) !important
+background-color: var(--brand-experiment) !important
 }
 #vc-friendcount,
 #vc-guildcount {
@@ -1319,7 +1320,7 @@ padding: 0.5em 0.5em 0.5em 0
 padding: 0.5em 0.5em 0
 }
 .jumpButton-1ZwI_j:hover {
-background: var(--modular-accent-color)
+background: var(--brand-experiment)
 }
 .jumpButton-1ZwI_j div {
 margin-top: -2px
@@ -1339,7 +1340,7 @@ height: 80vh
 [class*=recentMentionsPopout-] .channelHeader-DFRX8q {
 margin: 0 0 4px 0;
 padding: 0 8px 0 20px;
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 [class*=recentMentionsPopout-] .container-1A0qQO {
 background: var(--background-tertiary)
@@ -1350,8 +1351,8 @@ margin-top: -4px
 }
 .badge-1ImhlC {
 border-radius: calc(var(--guild-item-radius));
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
-box-shadow: 0 0 0 1.5px var(--modular-accent-color);
+background: color-mix(in srgb, var(--brand-experiment) 50%, black) !important;
+box-shadow: 0 0 0 1.5px var(--brand-experiment);
 top: 0
 }
 .messages-23can0, .messageContainer-3VTXBC {
@@ -1366,7 +1367,7 @@ background: var(--background-modifier-accent)
 .container-iA3Qrz .channelHeader-DFRX8q {
 margin-left: 16px;
 margin-bottom: 4px;
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black)
+background: color-mix(in srgb, var(--brand-experiment) 50%, black)
 }
 .channelHeader-DFRX8q .closeButton-3CiW2j {
 margin-left: 0;
@@ -1380,131 +1381,12 @@ top: 16px;
 padding: 8px
 }
 .jumpButton-1ITAeq:hover {
-background: var(--modular-accent-color)
+background: var(--brand-experiment)
 }
 .jumpButton-1ITAeq div {
 margin-top: -3px
 }
 
-/* [[ GUILD LIST ]] */
-.guilds-2JjMmN {
-width: 64px
-}
-.listItem-3SmSlK,
-.wrapper-38slSD,
-.svg-2ifYOU,
-.blobContainer-ikKyFs,
-.listItem-3SmSlK>.wrapper-z5ab_q+div:not([class]),
-.wrapper-2PSQCG,
-.svg-2ifYOU>foreignObject {
- width: 64px;
- mask: none !important
-}
-.listItem-3SmSlK:not(:has(.guildSeparator-a4uisj)),
-.wrapper-2PSQCG,
-.svg-2ifYOU>foreignObject {
- height: 40px
-}
-.expandedFolderBackground-1kSAf6 {
- width: calc(64px - 24px);
- border-radius: min(24px, var(--guild-item-radius))
-}
-.svg-2ifYOU>foreignObject {
- transform: translateX(calc(((64px*-1)/2) + 50%))
-}
-.wrapper-3kah-n,
-.folder-241Joy,
-.circleIconButton-1VxDrg {
- margin-left: 12px;
- width: calc(64px - 24px);
- justify-content: start;
-border-radius: var(--guild-item-radius) !important;
- height: 40px
-}
-.wrapper-3kah-n img,
-.folderIconWrapper-1oRIZr,
-.childWrapper-1j_1ub,
-.expandedFolderIconWrapper-3RwQpD,
-.closedFolderIconWrapper-3tRb2d {
- border-radius: var(--guild-item-radius) !important;
- height: 40px;
-width: 40px
-}
-.svg-2ifYOU {
- position: static
-}
-.wrapperSimple-2SFl9K {
- border-radius: 0 !important
-}
-.circleIcon-3489FI {
- margin-left: 12px;
- height: calc(40px - 8px)
-}
-.circleIconButton-1VxDrg.selected-2r1Hvo::after {
- color: var(--interactive-active)
-}
-.wrapper-3kah-n[data-list-item-id*="guildsnav___"].selected-1Drb7Z::after {
- color: var(--interactive-active)
-}
-.wrapper-38slSD>[id*="folder-items-"] {
- height: fit-content !important
-}
-.expandedFolderBackground-1kSAf6 {
- height: 100%
-}
-.upperBadge-1d6YsW,
-.lowerBadge-3j0ZAg {
- transform: translateX(-50%) !important
-}
-.numberBadge-37OJ3S,
-.iconBadge-32fMme {
-border-radius: calc(var(--guild-item-radius)/2)
-}
-.base-3IDx3L {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
-font-size: 12px;
-box-shadow: 0 0 0 1.5px var(--modular-accent-color)
-}
-.pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
- height: 40px !important;
- align-items: center;
-width: 2px;
-margin-left: 5px;
-background-color: var(--background-modifier-accent)
-}
-.wrapper-z5ab_q:last-child {
-width: 3px;
-align-items: center;
-border-radius: 0;
-height: 40px !important
-}
-.item-2LIpTv {
- max-height: 40px;
-background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent);
-border-radius: 0
-}
-.item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
-background-color: var(--modular-accent-color)
-}
-.circleIcon-3489FI {
- margin-left: 0
-}
-.circleIcon-3489FI {
- width: 40px;
- justify-content: center;
- align-items: center;
- box-sizing: border-box;
- padding: calc(40px/7)
-}
-.blobContainer-ikKyFs .wrapper-3kah-n[data-list-item-id*="guildsnav___"]::after {
- content: none
-}
-.listItem-3SmSlK {
- margin: calc(var(--guild-item-spacing) * 2) 0
-}
-div[style="opacity: 1; height: 56px; transform: scale(1);"] {
-height: 40px !important
-}
 
 /* PROFILE PANEL IN DMS */
 [class*=profilePanel-] {
@@ -1533,8 +1415,7 @@ background: transparent
 }
 [class*=connectionList-]>div {
 padding: auto 0.5em;
-margin: 0.5em;
-border-radius: var(--modular-border-radius)
+margin: 0.5em
 }
 [class*=mutualGuildsList-],
 [class*=mutualGuildsList-]>button {
@@ -1571,7 +1452,7 @@ content: "Modular " var(--modular-major-version) "." var(--modular-intermediate-
  font-size: 14px;
  font-family: var(--font-display);
  font-weight: 600;
- background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+ background: color-mix(in srgb, var(--brand-experiment) 50%, black);
  padding: 3px 6px 1px
 }
 .typeWindows-2-g3UY {
@@ -1642,7 +1523,7 @@ position: relative;
 transition: background 250ms ease-in-out
 }
 body:has(.vc-spotify-pause) .panels-3wFtMD {
-background: color-mix(in srgb, var(--modular-accent-color) 25%, rgba(0, 0, 0, 0.25)) !important
+background: color-mix(in srgb, var(--brand-experiment) 25%, rgba(0, 0, 0, 0.25)) !important
 }
 .chatContent-3KubbW {
 box-sizing: border-box;
@@ -2139,7 +2020,7 @@ background: transparent
  background-color: unset !important
 }
 ::selection {
-background: var(--modular-accent-color);
+background: var(--brand-experiment);
 color: var(--background-primary)
 }
 .textArea-7J7xQx {
@@ -2170,11 +2051,11 @@ top: -40px;
 z-index: -1
 }
 .progressBar-2yl2pi {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent)
+background: color-mix(in srgb, var(--brand-experiment) 50%, transparent)
 }
 .container-2giAcK:hover .progressBar-2yl2pi {
 animation: 5s flicker linear infinite;
-background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent)
+background: color-mix(in srgb, var(--brand-experiment) 75%, transparent)
 }
 .container-2giAcK:hover .tadaIcon-313rPm {
 animation: 3s flicker linear infinite
@@ -2215,7 +2096,7 @@ border-radius: calc(var(--modular-border-radius) * 2.5)
  overflow: hidden
 }
 .content-3spvdd {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+background: color-mix(in srgb, var(--brand-experiment) 50%, black);
 padding: 0.25em calc(50% - 50px)
 }
 .header-3YNgrp, .container-3kfp0r{
@@ -2481,22 +2362,31 @@ top: 16px
 padding: 0 0.25em
 }
 .divider-2rZFJK {
---status-danger: var(--modular-accent-color)
+--status-danger: var(--brand-experiment)
 }
 .unreadPill-3nEWYM {
-background: var(--modular-accent-color);
+background: var(--brand-experiment);
 color: var(--background-primary);
 font-size: 11px
 }
 .unreadPillCapStroke-1nE1Q8 {
-color: var(--modular-accent-color);
-fill: var(--modular-accent-color)
-}
-.wrapper-3kah-n[data-list-item-id="guildsnav___home"]::before {
-margin-left: 3px
+color: var(--brand-experiment);
+fill: var(--brand-experiment)
 }
 .wrapper-2vIMkT,
 .full-motion .wrapper-2vIMkT:hover {
-background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
-box-shadow: 0 0 0 1.5px var(--modular-accent-color)
+background: color-mix(in srgb, var(--brand-experiment) 50%, black) !important;
+box-shadow: 0 0 0 1.5px var(--brand-experiment)
 }
+.listItem-3SmSlK:first-of-type {
+    margin: 8px 0
+    }
+    .tipTitle-3FYEQp {
+    text-transform: none;
+    font-size: 0px;
+    font-weight: 800
+    }
+    .tipTitle-3FYEQp::after {
+    content: "Loading Vencord ...";
+    font-size: 18px
+    }

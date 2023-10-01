@@ -9,7 +9,9 @@
 /* Oneko instead of default DM button */
 @import url(https://seele1306.github.io/Snippets/OnekoDM/import.css); /* comment out to disable */
 /* Hide toolbar on top */
-@import url(https://seele1306.github.io/Modular/src/assets/toolbarhide.css);
+@import url(https://seele1306.github.io/Modular/src/assets/toolbarhide.css); /* comment out to disable */
+/* Guild list style */
+@import url(https://seele1306.github.io/Modular/src/assets/guildlist.css); /* comment out to disable */
 
 :root {
 	/* 
@@ -72,6 +74,7 @@
 	--guild-item-spacing: 4px;  /* Default is 4px */
 
 	/* [[ GENERAL LAYOUT ]] */
+	--datebar-width: 56px; /* Increase the value to shrink the new date bar - Default is 56px */
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
