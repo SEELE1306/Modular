@@ -1161,7 +1161,8 @@ font-size: 14px;
 font-family: var(--font-display);
 font-weight: 600;
 background: var(--brand-experiment-700);
-padding: 3px 6px 0
+border-radius: 4px;
+padding: 3px 6px
 }
 [class^=typeWindows] {
 margin-top: 0;
