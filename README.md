@@ -39,26 +39,6 @@ Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Venco
 ![Layout Sample 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20173847.png)
 ![Layout Sample 3](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20174111.png)
 
-<details>
-<summary>Features</summary>
-  
-Chat bubbles
-  
-![Chat bubbles 1](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225627.png)
-![Chat bubbles 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225614.png)
-![Chat embed](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225635.png)
-
-Revamped profile panels and modals
-  
-![Profile panel](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221245.png)
-![Profile modal](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221254.png)
-
-Revamped Spotify player
-
-![Spotify](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20232002.png)
-
-</details>
-
 ## Apply and customize
 
 ### Apply
@@ -112,57 +92,6 @@ To apply a color, use the following format: `var(--ctp-{scheme}-{color})`
 
 **Discord Nitro gradients** available: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
 midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea 
-
-**These are the currently available variables to tweak:**
-| Variable                               | Available values                                                                        | Default values                                                |
-| :--------------------------------------: | :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------: |
-|**Background**|                                                                                         |                                                               |
-| `--modular-background`               | **Solid color:** `none` or a **HEX value**                                                    | `none`                                                      |
-|                                        | **Nitro theme:** pick a theme from the list above, for example `mars`                     |                                                               |
-|                                        | **Custom background:** `url(link to background)`                                          |                                                               |
-| `--modular-background-blur-strength` | in `px`, `0px` for _no blur_                                                          | `10px`                                                      |
-| `--modular-background-brightness`    | In `%`, `100%` for _original brightness_                                              | `100%`                                                      |
-| `--modular-transparency`             | In `%`, best between `0` and `50%`                                                | `25%`                                                       |
-|**Accent**|                                                                                         |                                                               |
-| `--modular-hue`                      | In `degrees` (not necessary to type out), between `0` and `360`                   | `232`                                                       |
-| `--modular-saturation`               | In `%`, between `0` and `100%`                                                    | `23%`                                                       |
-| `--modular-lightness`                | In `%`, best between `0` and `30%`                                                | `18%`                                                       |
-| `--modular-accent-color`             | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-mauve)`                                |
-|**Status**|                                                                                         |                                                               |
-| `--rs-online-color`                  | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-green)`                                |
-| `--rs-idle-color`                    | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-yellow)`                               |
-| `--rs-dnd-color`                     | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-red)`                                  |
-| `--rs-streaming-color`               | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-lavender)`                             |
-| `--rs-bot-color`                     | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-blue)`                                 |
-|**Chat bubbles**|                                                                                         |                                                               |
-| `--chat-bubble-default`              | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--background-modifier-accent)`                         |
-| `--chat-bubble-replying`             | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-sky)`                                  |
-| `--chat-bubble-mentioned`            | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-peach)`                                |
-| `--chat-bubble-automod`              | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-red)`                                  |
-|**Staff tags**|                                                                                         |                                                               |
-| `--owner-color`                      | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-pink)`                                 |
-| `--admin-color`                      | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-green)`                                |
-| `--staff-color`                      | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-lavender)`                             |
-| `--mod-color`                        | a **HEX value**, or a predefined _Catppuccin value_                                           | `var(--ctp-macchiato-rosewater)`                            |
-|**Client border radius**|                                                                                         |                                                               |
-| `--modular-border-radius`            | In `px`                                                                               | `8px`                                                       |
-| `--modular-client-spacing`           | In `px`                                                                               | `12px`                                                      |
-| `--modular-client-radius`            | In `px`                                                                               | `4px`                                                       |
-|**Font change**|                                                                                         |                                                               |
-| `--font-main`                        | Any .ttf font                                                                           | gg sans (left blank)                                          |
-| `--font-code`                        | Any .ttf font                                                                           | Consolas (left blank)                                         |
-|**User section border**|                                                                                         |                                                               |
-| `--section-thickness`                | in `px`, `0px` for a cleaner look                                                   | `0px`                                                       |
-|**Guild list**|                                                                                         |                                                               |
-| `--guild-item-radius`                | In `px`                                                                               | `4px`                                                       |
-| `--guild-item-spacing`               | In `px`                                                                               | `4px`                                                       |
-|**General layout**|                                                                                         |                                                               |
-| `--sidebar-orientation`              | `column` or `column-reverse`, `column-reverse` for user panel **on top**              | `column`                                                    |
-| `--guild-orientation`                | `row` or `row-reverse`, `row-reverse` for guild bar **on the right**                  | `row`                                                       |
-| `--client-orientation`               | `row` or `row-reverse`, `row-reverse` for server list and user panel **on the right** | `row`                                                       |
-| `--memberlist-orientation`           | `row` or `row-reverse`, `row-reverse` for member list **on the left**                 | `row`                                                       |
-| `--friendlist-orientation`           | `row` or `row-reverse`, `row-reverse` for now playing tab **on the left**             | `row`                                                       |
-| `--titlebar-name`                    | Enter whatever you like in between the quotation marks                                  | Your name here |
 
 ##  Special thanks to
 My theme, at the end of the day, is just a compilation of the many snippets that I have found. I will try my best to credit all the users whose snippets I have ultilized, but if your name does not show up here, feel free to contact me.
