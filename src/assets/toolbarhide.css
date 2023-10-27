@@ -1,13 +1,13 @@
 /* [[ TOOLBAR HIDE ]] (( ADD-ON )) */
-.toolbar-3_r2xA {
+.toolbar__88c63 {
     overflow: hidden;
     justify-content: flex-end;
     transition: all 350ms;
 }
-.toolbar-3_r2xA:where(:not(:hover)){
+.toolbar__88c63:where(:not(:hover)){
     max-width: 32px;
 }
-.toolbar-3_r2xA::before {
+.toolbar__88c63::before {
     opacity: 0%;
     transition: opacity 150ms;
     position: absolute;
@@ -16,27 +16,27 @@
     display: block;
     width: 32px;
 }
-.toolbar-3_r2xA:where(:not(:hover))::before {
+.toolbar__88c63:where(:not(:hover))::before {
     opacity: 100%;
     transition: opacity 1000ms;
 }
-.toolbar-3_r2xA:hover {
+.toolbar__88c63:hover {
     transition: all 150ms;
 }
-.toolbar-3_r2xA > div {
+.toolbar__88c63 > div {
     transform: scaleX(0%) !important;
     opacity: 0%;
 	display: flex;
 	justify-content: center;
 }
-.toolbar-3_r2xA:hover > div {
+.toolbar__88c63:hover > div {
     transform: scaleX(100%) !important;
     transition: opacity 300ms;
     opacity: 100%;
 }
-.toolbar-3_r2xA > div:hover svg {
+.toolbar__88c63 > div:hover svg {
 	color: var(--modular-accent-color);
 }
-.toolbar-3_r2xA > div svg {
+.toolbar__88c63 > div svg {
     transition: all 0.3s;
 }
