@@ -1,8 +1,5 @@
 # Modular - A theme made for Vesktop
 
-> [!WARNING]
-> Due to the recent Discord variable changes, v1.3.2 is currently **completely broken**. I am working on fixing things up, please expect some time before the theme is back online again. Thank you for your patience.
-
 ## Introduction
 
 This is one of the first themes that is made exclusively for **Vencord's own client, Vesktop**. It incorporates many of the things I have learned since I started learning about CSS (and modifying Discord clients) in April this year. 
