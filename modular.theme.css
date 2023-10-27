@@ -50,7 +50,7 @@
 
 	/* [[ FONT CHANGE ]] */
 	--font-main: "" ;
-	--font-code: "" ;
+	--font-code: "Consolas" ;
 
 	/* [[ USER PANEL SECTION BORDER ]] */
 	--section-thickness: 0px; /* Default is 0px; 0px for no border */
