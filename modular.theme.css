@@ -1,3 +1,12 @@
+/**
+ * @name Modular
+ * @author SEELE1306
+ * @authorLink https://github.com/SEELE1306
+ * @description A highly customizable theme for Vesktop.
+ * @license GPL-3.0
+ * @version 2.0.1
+*/
+
 @import url(https://seele1306.github.io/Modular/src/main.css); /* main.min.css is faster but may be more buggy */
 
 /* --- CUSTOMIZABLE --- */
