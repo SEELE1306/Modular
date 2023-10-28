@@ -212,6 +212,6 @@
 --text-link: var(--text-normal);
 --modular-major-version: "v2";
 --modular-intermediate-version: "0";
---modular-small-version: "0";
+--modular-small-version: "1";
 --mention-background: var(--brand-experiment-30a);
 }
