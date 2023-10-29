@@ -89,9 +89,6 @@ To apply a color, use the following format: `var(--ctp-{scheme}-{color})`.
 
 For example, the color Latte Sapphire `#209FB5` would be `var(--ctp-latte-sapphire)`
 
-**Discord Nitro gradients** available: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
-midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea 
-
 ##  Special thanks to
 My theme, at the end of the day, is just a compilation of the many snippets that I have found. I will try my best to credit all the users whose snippets I have ultilized, but if your name does not show up here, feel free to contact me.
 
