@@ -10,7 +10,10 @@
 @import url(https://seele1306.github.io/Modular/src/main.css); /* main.min.css is faster but may be more buggy */
 
 /* --- CUSTOMIZABLE --- */
-
+/* catppuchin colors */
+@import url(https://unpkg.com/@catppuccin/palette@0.2.0/css/catppuccin.css);
+/* Nitro gradients */
+@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/nitro_themes.css);
 /* Optional settings icons in Settings by saltssaumure */
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); /* comment out to disable */
 /* Oneko instead of default DM button */
