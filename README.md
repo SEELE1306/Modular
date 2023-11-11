@@ -76,18 +76,14 @@ A large part of the following guide is also available inside the `modular.theme.
 
 To start customizing your layout, copy and paste the file `modular.theme.css` into your QuickCSS.
 
-Additionally, if you want to use add-ons (Settings Icons and Radial Status), paste these lines at the top of your QuickCSS:
-- Settings Icons by [Saltssaumure](https://github.com/Saltssaumure): `@import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);`
-- ~~Radial Status by [coolesding](https://github.com/coolesding):~~ (broken, requires fix)
-- OnekoDM: `@import url(https://seele1306.github.io/Snippets/OnekoDM/import.css);`
-- GuildList: `@import url(https://seele1306.github.io/Snippets/GuildList/import.css);`
-- Toolbar Hide: `@import url(https://seele1306.github.io/Modular/src/assets/toolbarhide.css);`
+Additional supported add-ons are available in `modular.theme.css`. You can comment out any add-ons that you don't need by adding `/*` at the beginning and `*/` at the end. 
 
-**Catppuccin Colors** are available in this theme for convenience. More about how the colors look like can be found [here](https://github.com/catppuccin/catppuccin).
+- To apply a **Catppuchin color**, use the following format: `var(--ctp-{scheme}-{color})`.
+  For example, the color Latte Sapphire `#209FB5` would be `var(--ctp-latte-sapphire)`.
 
-To apply a color, use the following format: `var(--ctp-{scheme}-{color})`. 
+  More about how the colors look like can be found [here](https://github.com/catppuccin/catppuccin).
 
-For example, the color Latte Sapphire `#209FB5` would be `var(--ctp-latte-sapphire)`
+- To apply a **Nitro gradient** as a background, use the following format: `var(--{gradient-name})`.
 
 ##  Special thanks to
 My theme, at the end of the day, is just a compilation of the many snippets that I have found. I will try my best to credit all the users whose snippets I have ultilized, but if your name does not show up here, feel free to contact me.
