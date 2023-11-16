@@ -4,7 +4,7 @@
 /* [[ REMADE DISCORD VARIABLES ]] */
 
 :root, .theme-dark {
-
+/* Primary variables */
 --primary-100-hsl: var(--modular-hue) var(--modular-saturation) 97.6%;
 --primary-130-hsl: var(--modular-hue) var(--modular-saturation) 95.5%;
 --primary-160-hsl: var(--modular-hue) var(--modular-saturation) 92.9%;
@@ -121,48 +121,8 @@
 --text-brand: var(--brand-experiment);
 --mention-background: var(--brand-experiment-30a);
 --background-primary-alt: hsl(var(--primary-600-hsl)/var(--modular-transparency)) !important;
---red-330: var(--brand-experiment-330);
---red-360: var(--brand-experiment-360);
---red-400: var(--brand-experiment-400);
---red-430: var(--brand-experiment-430);
---red-460: var(--brand-experiment-460);
---red-500: var(--brand-experiment-500);
---red-530: var(--brand-experiment-530);
---red-560: var(--brand-experiment-560);
---red-600: var(--brand-experiment-600);
---yellow-330: var(--brand-experiment-330);
---yellow-360: var(--brand-experiment-360);
---yellow-400: var(--brand-experiment-400);
---yellow-430: var(--brand-experiment-430);
---yellow-460: var(--brand-experiment-460);
---yellow-500: var(--brand-experiment-500);
---yellow-530: var(--brand-experiment-530);
---yellow-560: var(--brand-experiment-560);
---yellow-600: var(--brand-experiment-600);
---green-330: var(--brand-experiment-330);
---green-360: var(--brand-experiment-360);
---green-400: var(--brand-experiment-400);
---green-430: var(--brand-experiment-430);
---green-460: var(--brand-experiment-460);
---green-500: var(--brand-experiment-500);
---green-530: var(--brand-experiment-530);
---green-560: var(--brand-experiment-560);
---green-600: var(--brand-experiment-600);
 }
 :root, .theme-dark, .theme-light {
-/* Radial Status */
---rs-offline-color: #636b75;
---rs-spacer-color: transparent;
---rs-show-platformindicators: none;
---rs-small-size: 0.85;
---rs-small-roundness: 50%;
---rs-small-thickness: 3px;
---rs-medium-size: 0.85;
---rs-medium-roundness: 50%;
---rs-medium-thickness: 5px;
---rs-large-size: 0.85;
---rs-large-roundness: 50%;
---rs-large-thickness: 5px;
 /* Chat bubbles requirements */
 --background-message-hover: none;
 --background-mentioned: none;
@@ -181,10 +141,11 @@
 --font-primary: var(--font-main), var(--font-fallback);
 --font-display: var(--font-main), var(--font-fallback);
 --font-header: var(--font-main), var(--font-fallback);
+--font-code: var(--font-code), var(--font-code-fallback); 
 --font-fallback: "gg sans";
+--font-code-fallback: "consolas";
 --text-link: var(--text-normal);
 --modular-major-version: "v2";
 --modular-intermediate-version: "0";
---modular-small-version: "1";
---mention-background: var(--brand-experiment-30a);
+--modular-small-version: "2";
 }
