@@ -4,24 +4,26 @@
  * @authorLink https://github.com/SEELE1306
  * @description A highly customizable theme for Vesktop.
  * @license GPL-3.0
- * @version 2.0.1
+ * @version 2.0.2
 */
 
-@import url(https://seele1306.github.io/Modular/src/main.css); /* main.min.css is faster but may be more buggy */
+@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/main.css); /* main.min.css is faster but may be more buggy */
 
 /* --- CUSTOMIZABLE --- */
 /* catppuchin colors */
 @import url(https://unpkg.com/@catppuccin/palette@0.2.0/css/catppuccin.css);
 /* Nitro gradients */
 @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/nitro_themes.css);
+/* Extra colors */
+@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/extra_colors.css);
 /* Optional settings icons in Settings by saltssaumure */
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); /* comment out to disable */
 /* Oneko instead of default DM button */
-@import url(https://seele1306.github.io/Snippets/OnekoDM/import.css); /* comment out to disable */
+@import url(https://raw.githubusercontent.com/SEELE1306/CSS-Snippets/main/OnekoDM/import.css); /* comment out to disable */
 /* Hide toolbar on top */
 @import url(https://seele1306.github.io/Modular/src/assets/toolbarhide.css); /* comment out to disable */
 /* Guild list style */
-@import url(https://seele1306.github.io/Snippets/GuildList/import.css); /* comment out to disable */
+@import url(https://raw.githubusercontent.com/SEELE1306/CSS-Snippets/main/GuildList/import.css); /* comment out to disable */
 
 :root {
 	/* 
@@ -33,10 +35,10 @@
 	--modular-transparency: 25%; /* Between 0 and 50% - Default is 25% */
 
   	/* 
-	* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
+	* Nitro gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
   	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea 
 	*
-	* Catppuccin colors are available for convenience, more information at https://github.com/catppuccin/catppuccin
+	* Catppuccin colors: https://github.com/catppuccin/catppuccin
 	* To apply a color, use this format: var(--ctp-{scheme}-{color})
 	* Available schemes (replace {scheme} with these): macchiato, macchiato, macchiato, macchiato
 	* Available colors (replace {color} with these): rosewater, flamingo, pink, mauve, red, maroon, peach, yellow, green, teal, sky, sapphire, blue, lavender
@@ -45,24 +47,24 @@
 	/* [[ OVERALL ACCENT ]] */
 	--modular-hue: 232;
 	--modular-saturation: 23%; /* Change the percentage to something else */
-	--brand-experiment: var(--ctp-macchiato-mauve);
+	--brand-experiment: #c6a0f6;
 
 	/* [[ STATUS COLORS ]]  */ 
-	--rs-online-color: var(--ctp-macchiato-green); 
-	--rs-idle-color: var(--ctp-macchiato-yellow); 
-  	--rs-dnd-color: var(--ctp-macchiato-red); 
-	--rs-streaming-color: var(--ctp-macchiato-lavender);
-	--rs-bot-color: var(--ctp-macchiato-blue); 
+	--online-color: #a6e3a1; 
+	--idle-color: #f9e2af; 
+  	--dnd-color: #f38ba8; 
+	--streaming-color: #b4befe;
+	--bot-color: #89b4fa; 
 
 	/* [[ CHAT BUBBLE COLORS ]] */
-	--chat-bubble-default: var(--background-modifier-accent);
-	--chat-bubble-replying: var(--ctp-macchiato-sky);
-	--chat-bubble-mentioned: var(--ctp-macchiato-peach);
-	--chat-bubble-automod: var(--ctp-macchiato-red);
+	--chat-bubble-default: var(--brand-experiment);
+	--chat-bubble-replying: #91d7e3;
+	--chat-bubble-mentioned: #f5a97f;
+	--chat-bubble-automod: #ed8796;
 
 	/* [[ FONT CHANGE ]] */
 	--font-main: "";
-	--font-code: "Consolas";
+	--font-code: "";
 
 	/* [[ USER PANEL SECTION BORDER ]] */
 	--section-thickness: 0px; /* Default is 0px; 0px for no border */
