@@ -115,11 +115,11 @@
 
 /* [[ CUSTOM THEME VARIABLES ]] */
 
-:root {
+:root, .theme-dark {
 --status-danger: var(--brand-experiment);
 --button-outline-danger-border: var(--brand-experiment);
 --text-brand: var(--brand-experiment);
---mention-background: var(--brand-experiment-30a);
+--mention-background: var(--brand-experiment-30a) !important;
 --background-primary-alt: hsl(var(--primary-600-hsl)/var(--modular-transparency)) !important;
 }
 :root, .theme-dark, .theme-light {
