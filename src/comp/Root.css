@@ -140,12 +140,11 @@
 --profile-role-pill-background: none;
 --font-primary: var(--font-main), var(--font-fallback);
 --font-display: var(--font-main), var(--font-fallback);
---font-header: var(--font-main), var(--font-fallback);
 --font-code: var(--font-code), var(--font-code-fallback); 
 --font-fallback: "gg sans";
---font-code-fallback: "consolas";
+--font-code-fallback: "monospace","courier mono","consolas";
 --text-link: var(--text-normal);
 --modular-major-version: "v2";
 --modular-intermediate-version: "0";
---modular-small-version: "2";
+--modular-small-version: "3";
 }
