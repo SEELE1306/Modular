@@ -772,7 +772,7 @@ rect[fill="#593695"] {
 .groupStart__56db5.cozyMessage__64ce7>.contents_f41bb2,
 .cozyMessage__64ce7:not(.groupStart__56db5)>.contents_f41bb2>.markup_a7e664:not(:empty, .searchResultsWrap__9f374 *),
 .container_dbadf5>:not(.reactions_b8dc93, .searchResultsWrap__9f374 *, iframe) {
-    margin: calc(4px + var(--chat-bubble-border)) 0;
+    margin: 0;
     padding: 8px;
     border-radius: 8px;
     background: color-mix(in srgb, var(--chat-bubble-default) 25%, transparent);
@@ -781,8 +781,16 @@ rect[fill="#593695"] {
     box-shadow: 0 0 0 var(--chat-bubble-border) var(--chat-bubble-default)
 }
 
-.mediaAttachmentsContainer_edba75 {
-    margin-bottom: 0 !important
+/* Overwrite previous margin settings */
+.groupStart__56db5.cozyMessage__64ce7>.contents_f41bb2,
+.cozyMessage__64ce7:not(.groupStart__56db5)>.contents_f41bb2>.markup_a7e664:not(:empty, .searchResultsWrap__9f374 *) {
+    margin: calc(4px + var(--chat-bubble-border)) 0;
+}
+
+/* Fix overlapping of reactions */
+.reactions_b8dc93 {
+    margin-top: calc(4px + var(--chat-bubble-border));
+    margin-left: calc(0px - var(--chat-bubble-border));
 }
 
 .altText__6dd8b {
