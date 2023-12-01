@@ -860,7 +860,7 @@ rect[fill="#593695"] {
     left: 42.5%
 }
 
-.customStatus__3aa7f::before {
+[class^=customStatus__]::before {
     content: "Current status";
     font-weight: 800;
     color: var(--text-muted);
