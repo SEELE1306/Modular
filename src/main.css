@@ -5,7 +5,7 @@
 
 :root {
     /* [[ START OF CUSTOMIZABLE PARAMETERS ]] */
-    --modular-background: url(https://media.discordapp.net/attachments/865879807988465730/1175459074331119616/XZjE03EI.jpg?ex=656b4e92&is=6558d992&hm=3216fdc1563284f0bcb82105b4d06fd23625eb539c0b1ba613b26d5985ba5ca7&=&width=1439&height=623) !important;
+    --modular-background: none !important;
     --modular-hue: 232;
     --modular-saturation: 23%;
     --brand-experiment: #c6a0f6;
