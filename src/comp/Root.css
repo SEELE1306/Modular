@@ -3,7 +3,7 @@
 
 /* [[ REMADE DISCORD VARIABLES ]] */
 
-:root, .theme-dark {
+:root, .theme-dark, .theme-light {
 /* Primary variables */
 --primary-100-hsl: var(--modular-hue) var(--modular-saturation) 97.6%;
 --primary-130-hsl: var(--modular-hue) var(--modular-saturation) 95.5%;
@@ -115,7 +115,7 @@
 
 /* [[ CUSTOM THEME VARIABLES ]] */
 
-:root, .theme-dark {
+:root, .theme-dark, .theme-light {
 --status-danger: var(--brand-experiment);
 --button-outline-danger-border: var(--brand-experiment);
 --text-brand: var(--brand-experiment);
