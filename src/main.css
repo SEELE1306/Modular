@@ -1126,8 +1126,8 @@ img[class*="emoji_"] {
 
 /* [[ PLATFORM INDICATORS ]] */
 :is(.membersWrap__90226, .privateChannels__93473) .vc-platform-indicator > svg {
-  width: 12.5px !important;
-  height: 12.5px !important;
+  width: 12px !important;
+  height: 12px !important;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -1136,8 +1136,8 @@ img[class*="emoji_"] {
 /* Fix rewrite of platform indicators */
 .vc-platform-indicator {
   & > svg {
-    width: 15px !important;
-    height: 15px !important;
+    width: 16px !important;
+    height: 16px !important;
     margin-top: 2px;
 
     &[fill="#23a55a"] {
