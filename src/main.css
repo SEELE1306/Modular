@@ -240,9 +240,9 @@ span[style="width: 6px; height: 6px; border-radius: 50%; border: 3px solid var(-
 
   /* Slowmode/typing indicators */
   & > :last-child[class^="typing"] {
-    top: -32px;
+    top: -24px;
     right: 24px;
-    padding: 4px 16px 4px 8px;
+    padding: 0px 16px 0fpx 8px;
     margin-left: auto;
     width: fit-content;
     border-radius: 8px 8px 0 0;
@@ -1136,7 +1136,7 @@ img[class*="emoji_"] {
 /* Fix rewrite of platform indicators */
 .vc-platform-indicator {
   & > svg {
-    width: 16px !important;
+    /*     width: 16px !important; */
     height: 16px !important;
     margin-top: 2px;
 
