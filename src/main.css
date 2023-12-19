@@ -1136,7 +1136,7 @@ img[class*="emoji_"] {
 /* Fix rewrite of platform indicators */
 .vc-platform-indicator {
   & > svg {
-    /*     width: 16px !important; */
+    width: 16px !important;
     height: 16px !important;
     margin-top: 2px;
 
