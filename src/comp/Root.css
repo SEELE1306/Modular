@@ -305,8 +305,10 @@
   --button-outline-danger-border: var(--brand-experiment);
   --text-brand: var(--brand-experiment);
   --mention-background: var(--brand-experiment-30a) !important;
-  --background-primary-alt: hsl(
-    var(--primary-600-hsl) / var(--modular-transparency)
+  --background-primary-alt: color-mix(
+    in srgb,
+    var(--background-primary) var(--modular-transparency),
+    transparent
   ) !important;
 }
 :root,
