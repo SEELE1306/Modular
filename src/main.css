@@ -1434,14 +1434,14 @@ img[class*="emoji_"] {
     padding: 0 16px;
     margin: 0;
     box-sizing: border-box;
-    border-radius: unset;
+    border-radius: 8px 8px 0 0;
   }
 
   & button {
     background: transparent;
     height: 40px;
     width: 100%;
-    border-radius: unset;
+    border-radius: 0 0 8px 8px;
     box-sizing: border-box;
 
     &:hover {
