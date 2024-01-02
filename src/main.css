@@ -1434,14 +1434,14 @@ img[class*="emoji_"] {
     padding: 0 16px;
     margin: 0;
     box-sizing: border-box;
-    border-radius: unset;
+    border-radius: 8px 8px 0 0;
   }
 
   & button {
     background: transparent;
     height: 40px;
     width: 100%;
-    border-radius: unset;
+    border-radius: 0 0 8px 8px;
     box-sizing: border-box;
 
     &:hover {
@@ -1459,12 +1459,6 @@ img[class*="emoji_"] {
     color: var(--interactive-hover);
   }
 }
-
-/*.panels__58331 .container_ca50b9 .flex_f5fbb7 {
-  width: 100%;
-  justify-content: center;
-  gap: 0px;
-}*/
 
 .withTagAsButton_cc125f:hover {
   background: var(--brand-experiment-700) !important;
