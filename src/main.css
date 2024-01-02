@@ -1460,12 +1460,6 @@ img[class*="emoji_"] {
   }
 }
 
-/*.panels__58331 .container_ca50b9 .flex_f5fbb7 {
-  width: 100%;
-  justify-content: center;
-  gap: 0px;
-}*/
-
 .withTagAsButton_cc125f:hover {
   background: var(--brand-experiment-700) !important;
 }
