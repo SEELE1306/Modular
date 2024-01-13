@@ -89,7 +89,7 @@ span[style="width: 6px; height: 6px; border-radius: 50%; border: 3px solid var(-
 
   & [class*="bar_"] {
     background: var(--background-modifier-accent);
-    height: 4px;
+    height: 4px;f
   }
 
   & [class*="barFill"] {
@@ -1330,9 +1330,10 @@ img[class*="emoji_"] {
   color: var(--header-primary);
 
   &::after {
-    content: "Modular " var(--modular-major-version) "."
-      var(--modular-intermediate-version) "." var(--modular-small-version) " - "
-      var(--titlebar-name);
+    content: "Modular " var(--modular-version) " - " var(--titlebar-name);
+    /* For later versions:--modular-major-version
+     * content: "Modular " var(--modular-flavour) " " var(--modular-version) " - " var(--titlebar-name);
+     */
     display: flex;
     width: fit-content;
     font-size: 14px;
