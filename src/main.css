@@ -600,26 +600,21 @@ code:not(code.inline) {
 
 /* [[ STATUS (ALTERNATIVE) ]] */
 rect[fill="#23a55a"],
-rect[fill="rgba(35, 165, 90, 1)"],
-foreignObject[mask="url(#svg-mask-status-online)"] > div,
-div[class^="dotOnline"],
-i[class^="statusOnline_"] {
+.status__1c26d[style="background-color: rgb(35, 165, 90);"] {
   fill: var(--online-color) !important;
-  background: var(--online-color) !important;
+  background-color: var(--online-color) !important;
 }
 
 rect[fill="#f0b232"],
-rect[fill="rgba(240, 178, 50, 1)"],
-foreignObject[mask="url(#svg-mask-status-idle)"] > div {
+.status__1c26d[style="background-color: rgb(240, 178, 50);"] {
   fill: var(--idle-color) !important;
-  background: var(--idle-color) !important;
+  background-color: var(--idle-color) !important;
 }
 
 rect[fill="#f23f43"],
-rect[fill="rgba(242, 63, 67, 1)"],
-foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
+.status__1c26d[style="background-color: rgb(242, 63, 67);"] {
   fill: var(--dnd-color) !important;
-  background: var(--dnd-color) !important;
+  background-color: var(--dnd-color) !important;
 }
 
 rect[fill="#593695"] {
