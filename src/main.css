@@ -1307,7 +1307,7 @@ img[class*="emoji_"] {
 
 /* [[ TITLEBAR ]] */
 /* v2.0.4 rewrite */
-[class^="wordmarkWindows"] {
+.wordmarkWindows__05c46 {
   display: flex;
   align-items: center;
   order: 1;
@@ -1346,7 +1346,7 @@ img[class*="emoji_"] {
   }
 }
 
-[class^="typeWindows"] {
+.typeWindows__5fa63 {
   margin-top: 0;
   height: fit-content;
   background: var(--background-tertiary);
