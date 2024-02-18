@@ -7,24 +7,19 @@
  * @version 2.0.5
  * @authorId 518795791318384647
  * @discord seele1306
-*/
+ **/
+
+/* --- IMPORT MAIN FILE --- */
 
 @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/main.css);
 
 /* --- CUSTOMIZABLE --- */
-/* comment out to disable */
+
+/* comment out to enable, more add-ons at https://github.com/SEELE1306/CSS-Snippets/tree/main */
 /* Nitro gradients */
-@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/nitro_themes.css);
-/* Extra colors */
-@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/extra_colors.css);
+/* @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/nitro_themes.css); */
 /* Optional settings icons in Settings by saltssaumure */
-@import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);
-/* Oneko instead of default DM button */
-@import url(https://raw.githubusercontent.com/SEELE1306/CSS-Snippets/main/OnekoDM/import.css);
-/* Hide toolbar on top */
-@import url(https://seele1306.github.io/Modular/src/assets/toolbarhide.css);
-/* Guild list style */
-@import url(https://raw.githubusercontent.com/SEELE1306/CSS-Snippets/main/GuildList/import.css);
+/* @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); */
 
 :root {
   /*
@@ -40,12 +35,7 @@
 
   /*
 	* Nitro gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
-  	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea
-	*
-	* Catppuccin colors: https://github.com/catppuccin/catppuccin
-	* To apply a color, use this format: var(--ctp-{scheme}-{color})
-	* Available schemes (replace {scheme} with these): macchiato, macchiato, macchiato, macchiato
-	* Available colors (replace {color} with these): rosewater, flamingo, pink, mauve, red, maroon, peach, yellow, green, teal, sky, sapphire, blue, lavender
+  * midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea
 	*/
 
   /* [[ OVERALL ACCENT ]] */
@@ -62,8 +52,7 @@
   --bot-color: #89b4fa;
 
   /* [[ CHAT BUBBLES ]] */
-  --chat-bubble-border: 2px;
-  /* 0px for no border, default is 2px */
+  --enable-chat-bubble-border: 0; /* 1 to enable, 0 to disable */
   --chat-bubble-default: var(--brand-experiment);
   --chat-bubble-replying: #91d7e3;
   --chat-bubble-mentioned: #f5a97f;
@@ -73,13 +62,8 @@
   --font-main: "";
   --font-code: "";
 
-  /* [[ USER PANEL SECTION BORDER ]] */
-  --section-thickness: 0px;
-  /* Default is 0px; 0px for no border */
-
   /* [[ CLIENT LAYOUT ]] */
-  --client-border: 2px;
-  /* 0px for no border; Default is 2px */
+  --enable-client-border: 1; /* 1 to enable, 0 to disable */
   --client-border-color: var(--brand-experiment);
   --sidebar-orientation: column;
   /* column-reverse for user panel on top */
