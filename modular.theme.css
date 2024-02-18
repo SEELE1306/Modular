@@ -4,17 +4,15 @@
  * @authorLink https://github.com/SEELE1306
  * @description A highly customizable theme for Vesktop.
  * @license MIT
- * @version 2.0.4
+ * @version 2.0.5
  * @authorId 518795791318384647
- * @username seele1306
+ * @discord seele1306
 */
 
 @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/main.css);
 
 /* --- CUSTOMIZABLE --- */
 /* comment out to disable */
-/* catppuchin colors */
-@import url(https://unpkg.com/@catppuccin/palette@0.2.0/css/catppuccin.css);
 /* Nitro gradients */
 @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/nitro_themes.css);
 /* Extra colors */
