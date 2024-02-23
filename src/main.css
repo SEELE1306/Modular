@@ -211,6 +211,10 @@ span[class*=dot_][class*=maskSecondary_],
       min-height: 49px;
       border-radius: 0;
     }
+
+    & > .content_cecbc1 > img {
+      margin-bottom: 8px;
+    }
   }
 
   /* Slowmode/typing indicators */
