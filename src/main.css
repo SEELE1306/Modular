@@ -219,13 +219,13 @@ span[class*=dot_][class*=maskSecondary_],
 
   /* Slowmode/typing indicators */
   & > :last-child[class^="typing"] {
-    top: -24px;
+    top: -28px;
     right: 24px;
     padding: 0px 16px 0px 8px;
     margin-left: auto;
     width: fit-content;
-    border-radius: 4px 4px 0 0;
-    background: var(--background-primary);
+    border-radius: 4px;
+    background: var(--background-tertiary);
   }
 
   & .buttons_ce5b56 {
@@ -354,15 +354,13 @@ span[class*=dot_][class*=maskSecondary_],
 .attachedBars_da3c74 {
   min-height: unset !important;
   position: relative;
-  /* v2.0.1 */
-  padding: 0 0 2px 0 !important;
-  margin: 0 20px 0 0px !important;
-  border-top-right-radius: 8px !important;
-  background: var(--brand-experiment);
+  margin: 4px 16px 4px 4px;
+  border-radius: 4px !important;
+  background: var(--background-tertiary);
 }
 
 .replyBar_b64d74 {
-  background: var(--brand-experiment);
+  background: var(--background-tertiary);
 }
 
 /* Positions both the *new messages* and *viewing old messages* bars on top of the channel text area. */
@@ -391,10 +389,10 @@ span[class*=dot_][class*=maskSecondary_],
 
 .newMessagesBar__8b6d7 {
   height: 24px;
-  margin-left: calc(var(--bar-edges) * -1);
-  border-radius: 4px 4px 0 0;
+  margin-left: calc(var(--bar-edges) * -1 + 4px);
+  border-radius: 4px;
   inset: auto var(--bar-edges) 0;
-  background: var(--background-primary);
+  background: var(--background-tertiary);
 
   &:hover .span_a7874a {
     animation: vertiscroll 0.5s linear forwards;
