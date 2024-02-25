@@ -25,11 +25,11 @@ This is one of the first themes that is made exclusively for **Vencord's own cli
 
 ## Screenshots
 
-### This is what you will see upon loading the theme for the first time:
+### This is what you will see upon loading the theme for the first time
 
 ![First Load](./docs/_media/v200default.png)
 
-### Layouts can be customized to something like this:
+### Layouts can be customized to something like this
 
 ![Layout Sample](./docs/_media/v200themed.png)
 
