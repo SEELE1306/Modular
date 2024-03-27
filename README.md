@@ -54,7 +54,7 @@ There are several methods to apply this theme:
 <summary>Via Online Themes</summary>
 
 - Open Settings > Vencord > Themes > Online Themes.
-- Paste the following link into **Theme Links**: `https://seele1306.github.io/Modular/modular.theme.css`
+- Paste the following link into **Theme Links**: `https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css`
 - Enter or mouse-click outside the Online Themes box to apply
 
 </details>
@@ -64,7 +64,7 @@ There are several methods to apply this theme:
 <summary>Via QuickCSS</summary>
 
 - Open Settings > Vencord > Vencord > Open QuickCSS File
-- Paste the following line as your **first line (ahead of any other custom CSS)**: `@import url(https://seele1306.github.io/Modular/modular.theme.css);`.
+- Paste the following line as your **first line (ahead of any other custom CSS)**: `@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css);`.
 
 </details>
 
