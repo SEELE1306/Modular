@@ -1,11 +1,14 @@
-# Modular - A theme made for Vesktop
+# Modular
+
+![GitHub Release](https://img.shields.io/github/v/release/SEELE1306/Modular?style=for-the-badge)
+![GitHub License](https://img.shields.io/github/license/SEELE1306/Modular?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/supports-vesktop-red?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/SEELE1306/Modular?style=for-the-badge&color=B48EAD)
+
 
 ## Introduction
 
-This is one of the first themes that is made exclusively for **Vencord's own client, Vesktop**.
-
-> [!IMPORTANT]
-> This theme is only guaranteed to work on Vesktop. Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Vencord/Vesktop/releases)
+This is one of the first themes that is made exclusively for [Vencord/Vesktop](https://github.com/Vencord/Vesktop/releases).
 
 ## Features
 
@@ -54,7 +57,7 @@ There are several methods to apply this theme:
 <summary>Via Online Themes</summary>
 
 - Open Settings > Vencord > Themes > Online Themes.
-- Paste the following link into **Theme Links**: `https://seele1306.github.io/Modular/modular.theme.css`
+- Paste the following link into **Theme Links**: `https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css`
 - Enter or mouse-click outside the Online Themes box to apply
 
 </details>
@@ -64,7 +67,7 @@ There are several methods to apply this theme:
 <summary>Via QuickCSS</summary>
 
 - Open Settings > Vencord > Vencord > Open QuickCSS File
-- Paste the following line as your **first line (ahead of any other custom CSS)**: `@import url(https://seele1306.github.io/Modular/modular.theme.css);`.
+- Paste the following line as your **first line (ahead of any other custom CSS)**: `@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css);`.
 
 </details>
 
