@@ -76,4 +76,8 @@
   --friendlist-orientation: row;
   /* row-reverse for now playing tab on the left */
   --titlebar-name: "insert your name here or whatever quote you like I don't care";
+
+  /* [[ SPOTIFY TRACK BACKGROUND */
+  --blur-amount: 2px; /* higher px = stronger blur, 0 = no blur */
+  --darken-percent: 0.5; /* 0 = album cover is not darkened, 1 = album cover is darkened fully (black) */
 }
