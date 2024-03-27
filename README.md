@@ -3,7 +3,6 @@
 ![GitHub Release](https://img.shields.io/github/v/release/SEELE1306/Modular?style=for-the-badge)
 ![GitHub License](https://img.shields.io/github/license/SEELE1306/Modular?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/supports-vesktop-red?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/SEELE1306/Modular?style=for-the-badge&color=B48EAD)
 
 
 ## Introduction
