@@ -340,5 +340,5 @@
   --font-code-fallback: "monospace", "courier mono", "consolas";
   --text-link: var(--text-normal);
   /* Update versioning scheme */
-  --modular-version: "v2.0.6";
+  --modular-version: "v2.0.7";
 }
