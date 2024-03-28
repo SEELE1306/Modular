@@ -377,7 +377,7 @@ span[class*=dot_][class*=maskSecondary_],
 
 .channelAttachmentArea__5e46a {
   background: var(--background-tertiary);
-  margin-left: 4px;
+  margin: 4px 8px;
   padding: 8px;
   gap: 8px;
   border-radius: 8px;
