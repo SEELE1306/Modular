@@ -929,7 +929,7 @@ rect[fill="#593695"] {
 /* [[ PROFILES ]] */
 
 /* Custom status */
-.customStatus__3aa7f {
+.customStatus__6a31a {
   &::before {
     content: "Current status";
     font-weight: 800;
@@ -937,14 +937,14 @@ rect[fill="#593695"] {
     display: block;
   }
 
-  & .customStatusEmoji__00639 {
+  & .customStatusEmoji__81bd9 {
     margin: 4px -12px 8px;
     position: relative;
     left: 50%;
     float: none;
     border-radius: 4px;
 
-    &.customStatusSoloEmoji__24b58 {
+    &.customStatusSoloEmoji_aab12e {
       position: relative;
       left: 42.5%;
     }
