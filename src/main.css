@@ -69,9 +69,9 @@ span[class*=dot_][class*=maskSecondary_],
 [class*=automodMessage_]:before,
 .content__6bf34 .iconContainer__6a580,
 .uploadInput_aa27e8,
-[class^=accountProfilePopoutWrapper] .section__62b44,
-.userPopoutInner_e90432:has(#account)>*:not(:has(#account)),
-.userPopoutOverlayBackground_bf6444:has(#account)>*:not(#account),
+/* User options */
+[class^=userPopoutInner_]:has(#account)>*:not(:has(#account)),
+[class^=userPopoutOverlayBackground_]:has(#account)>*:not(#account),
 .lockIcon_f844b1,
 .separator__68570,
 .userInfoSection_e816c1 .eyebrow_b3f8ba:last-child,
@@ -79,6 +79,8 @@ span[class*=dot_][class*=maskSecondary_],
 .aboutMeGuildIcon_b05b69,
 /* Profile guild icon */
 .divider__7116f,
+.divider_d6f39c,
+.section__62b44 > .buttonsContainer__83ada,
 /* Profile modal border */
 /* Dividers in the profile */
 .scroller__1f498 .sectionDivider__9dbcb,
@@ -134,7 +136,11 @@ span[class*=dot_][class*=maskSecondary_],
     width: 100%;
     top: 0;
     left: 0;
-    background: var(--vc-spotify-track-image) center/cover no-repeat;
+    background: linear-gradient(
+        rgba(0, 0, 0, var(--darken-percent)),
+        rgba(0, 0, 0, var(--darken-percent))
+      ),
+      var(--vc-spotify-track-image) center/cover no-repeat;
     opacity: 0.5;
     filter: blur(50px);
     transform: scale(20);
@@ -246,12 +252,6 @@ span[class*=dot_][class*=maskSecondary_],
 }
 
 /* [[ VC CONTAINER + CONTROLS ]] */
-.container_e1958d {
-  border: none;
-  padding: 4px;
-  background: transparent !important;
-}
-
 .connection__38593,
 .voiceUsers__665a5 {
   padding: 8px 12px;
@@ -494,7 +494,6 @@ span[class*=dot_][class*=maskSecondary_],
 [class*="botTag_"] {
   background: var(--brand-experiment-100);
   color: var(--brand-experiment-900);
-  text-transform: none;
 }
 
 [class^="userTagNoNickname-"] > [class*="botTag"] {
@@ -927,12 +926,56 @@ rect[fill="#593695"] {
 }
 
 /* [[ PROFILES ]] */
+/* Limit height of user popouts */
+[class^="userPopoutInner_"] {
+  max-height: calc(
+    75vh - 28px - var(--custom-user-popout-outside-components-height)
+  );
+}
+
+/* General layout, center items */
+.mainContainer_c5e1e2.profileMutuals__95dc2 {
+  padding-bottom: 8px;
+}
+
+.section__62b44 {
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.section__62b44 > div:not(.activity__20c1e, .roles__74a2b),
+.memberSinceWrapper__03059,
+.mainContainer_c5e1e2.profileMutuals__95dc2,
+.userInfoText_b87307,
+.container__9f51c,
+.nameTag_fdddf8,
+.popularApplicationCommandsList__0eb68,
+.section__62b44:has(.vc-user-connection) > .eyebrow_b3f8ba {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.section__62b44:not(:has(.buttonsContainer__83ada)),
+.mutualGuildsList__5e9f3,
+.mutualFriendsList__02caf,
+.userInfoText_b87307.aboutMeGuildIcon_b05b69,
+.mainContainer_c5e1e2.profileMutuals__95dc2 {
+  background: var(--profile-body-background-color);
+  border-radius: 8px;
+}
 
 /* Custom status */
+.section__62b44.customStatusSection_c9f9ba {
+  margin: 8px 12px;
+}
+
 .customStatus__6a31a {
   &::before {
     content: "Current status";
+    text-transform: uppercase;
     font-weight: 800;
+    font-size: 12px;
     color: var(--text-muted);
     display: block;
   }
@@ -951,13 +994,19 @@ rect[fill="#593695"] {
   }
 }
 
-.userPopoutInner_e90432 {
-  max-height: 75vh;
+/* Activity user popout */
+.activityUserPopoutV2__89098 {
+  padding: 0 8px;
+}
+
+/* Spotify song text and time left align */
+.contentImagesUserPopoutV2_cbfb04,
+.textLeft__05c15 {
+  text-align: left;
 }
 
 .pronouns__8aa38,
 .pronouns__3d468 {
-  text-transform: none;
   color: var(--text-normal);
   font-size: 16px;
   font-weight: bold;
@@ -974,50 +1023,18 @@ rect[fill="#593695"] {
   background-size: 200% 200%;
 }
 
-.scroller_f9a667 {
-  padding: 6px 12px;
-}
-
-.section__62b44 > div:not(.roles__74a2b),
-.userInfoText_b87307 {
-  padding: 8px;
-}
-
 .scrollerSeparator_d8843a {
   box-shadow: none;
 }
 
-.section__62b44.usernameSection_dd6196 {
-  margin-bottom: 8px;
-}
-
-.container__9f51c {
-  margin: 0 12px;
-  padding: 16px;
-}
-
 /* profile section width fix */
-.usernameSection_dd6196 > div {
-  width: calc(100% - 16px);
-}
+.section__62b44.usernameSection_dd6196 {
+  margin: 0 12px;
+  padding: 8px;
 
-.section__62b44 > div:not(.activity__20c1e, .roles__74a2b),
-.memberSinceContainer__16630,
-.userInfoText_b87307,
-.container__9f51c,
-.nameTag_fdddf8,
-img[class*="emoji_"] {
-  justify-content: center;
-  text-align: center;
-}
-
-.section__62b44 > div:not(.roles__74a2b),
-.mutualGuildsList__5e9f3,
-.mutualFriendsList__02caf,
-.container__9f51c,
-.userInfoText_b87307 {
-  background: var(--profile-body-background-color);
-  border-radius: 8px;
+  & > div {
+    width: 100%;
+  }
 }
 
 /* remove border in modal connections */
@@ -1271,11 +1288,6 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
     font-weight: 800;
     margin-left: -4px;
   }
-}
-
-#vc-friendcount,
-#vc-guildcount {
-  text-transform: none !important;
 }
 
 .content__01e65.container__03ec9 {
@@ -1533,7 +1545,6 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 
 .categoryText_b2688c {
-  text-transform: capitalize;
   font-size: 16px;
 }
 
@@ -1598,7 +1609,6 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 .profile__4e41d > .text-xs-normal__46d75,
 .heading-md-semibold__76ba1 {
   text-align: center;
-  text-transform: none;
 }
 
 .profileCard__1d74b .blockquoteContainer__66aaa {
@@ -1856,7 +1866,6 @@ div[class|="message"] div[class|="markup"] ol {
 .formTitle-2YQyhj {
   color: var(--header-primary);
   font-size: 16px;
-  text-transform: none;
 }
 
 .rowContainer-3t7486 {
@@ -1938,7 +1947,6 @@ div[class|="message"] div[class|="markup"] ol {
 .title__7a155,
 .label_bf6957,
 .legend__2459b {
-  text-transform: none;
   font-size: 16px;
 }
 
@@ -2019,7 +2027,7 @@ div[class|="message"] div[class|="markup"] ol {
   }
 }
 
-.overlayBackground__2666e {
+.overlayBackground__345c9 {
   background: transparent;
 }
 
@@ -2123,7 +2131,6 @@ h2.container__43554 {
   margin-left: 8px;
   font-size: 14px;
   text-align: center;
-  text-transform: none;
 }
 
 h2.container__43554 {
@@ -2165,7 +2172,6 @@ svg[class*="addButtonIcon_"] {
 }
 
 .guildTitle_e577f7 {
-  text-transform: none;
   font-size: 14px;
 }
 
@@ -2244,19 +2250,16 @@ svg[class*="addButtonIcon_"] {
 .activity__20c1e .overflow__993fa,
 span[class*="headerLabel_"],
 [class*="pageBody_"] > div > h2 {
-  text-transform: none;
   font-size: 14px;
   color: var(--header-primary) !important;
   display: block;
   text-align: center;
 }
 
-:is(.section__62b44, .userInfoSection_e816c1) .eyebrow_b3f8ba {
-  text-transform: none;
-  font-size: 14px;
-  color: var(--header-primary);
-  display: block;
-  text-align: center;
+.eyebrow_b3f8ba {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-muted) !important;
 }
 
 .item__48dda.themed_b957e8 {
@@ -2320,7 +2323,6 @@ path[fill="rgba(35, 165, 90, 1)"] {
 }
 
 .resultsGroup_b221b0 .header__00739 {
-  text-transform: none;
   font-size: 14px;
 }
 
@@ -2395,48 +2397,6 @@ path[fill="rgba(35, 165, 90, 1)"] {
   border-radius: 4px;
 }
 
-/* Full menu settings by coolesding */
-/* Server banners border */
-.animatedContainer__0e828 {
-  border-radius: 8px;
-}
-
-.sidebarRegion__36437 {
-  /*Left*/
-  max-width: fit-content !important;
-}
-
-.contentColumn__5f80b {
-  /*Right*/
-  max-width: unset;
-}
-
-.standardSidebarView__12528 {
-  /*Top*/
-  top: 0px !important;
-}
-
-.sidebar__02e8d {
-  /*Sidebar Top*/
-  padding-top: 2em;
-}
-
-.avatar__6c108 {
-  /*Fix Avatar*/
-  top: 215px;
-}
-
-.accountProfileCard__744d8 {
-  & .bannerSVGWrapper__8a38c {
-    & circle {
-      /*fix the background circle (fuck you dishcord)*/
-      r: 19.701;
-      cy: 109;
-      cx: 27;
-    }
-  }
-}
-
 .reaction__4a43f {
   background: var(--background-primary);
 }
@@ -2467,4 +2427,20 @@ button[class*="lookOutlined__"] {
 .badgeList__76720 {
   margin-right: 10px;
   border-radius: 8px;
+}
+
+/* VC container */
+.container_e1958d {
+  margin-bottom: calc(8px * var(--enable-client-border));
+  padding: 0;
+  background: transparent;
+  border-radius: calc(8px + 2px * 2 * var(--enable-client-border));
+  border-bottom: none;
+  border: calc(2px * var(--enable-client-border)) solid
+    var(--client-border-color);
+
+  & span {
+    font-family: var(--font-primary) !important;
+    font-weight: bold;
+  }
 }
