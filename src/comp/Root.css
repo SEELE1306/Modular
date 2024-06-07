@@ -178,6 +178,7 @@
     var(--background-primary) var(--modular-transparency),
     transparent
   ) !important;
+  --mention-background: color-mix(in srgb, var(--brand-500) 25%, transparent);
 }
 :root,
 .theme-dark,
