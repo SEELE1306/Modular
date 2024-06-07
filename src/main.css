@@ -47,7 +47,8 @@ span[class*=dot_][class*=maskSecondary_],
 .replying__38514::before,
 .mentioned_fa6fd2::before,
 .children_cde9af:after,
-.form_d8a4a1:before,
+.form_d8a4a1::before,
+.form_d8a4a1::after,
 .section__62b44:has(.roles__74a2b:empty),
 .lastSection__62986,
 .content__01e65::before,
@@ -278,8 +279,16 @@ span[class*=dot_][class*=maskSecondary_],
   padding: 0;
 
   /* Align chat box to bottom */
-  & > :first-child {
+  & > .channelTextAreaContainer__37a67 {
     margin-bottom: 0px;
+
+    & > .channelTextArea_c2094b {
+      margin-bottom: 0px;
+
+      & > .scrollableContainer_ff917f {
+        margin: 0 8px 8px 8px
+      }
+    }
 
     /* center chatbox contents, no border radius */
     & > * {
