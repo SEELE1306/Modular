@@ -512,6 +512,10 @@ span[class*=dot_][class*=maskSecondary_],
   font-weight: bold;
 }
 
+.botTagVerified__3e0e4 > path{
+  fill: var(--brand-900) !important;
+}
+
 /* [[ CHANNEL LIST ]] */
 :is(.containerDefault_ae2ea4.selected__11b62, .modeUnreadImportant__35358)
   .icon__67ab4,
