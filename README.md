@@ -2,12 +2,15 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/SEELE1306/Modular?style=for-the-badge)
 ![GitHub License](https://img.shields.io/github/license/SEELE1306/Modular?style=for-the-badge)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/SEELE1306/Modular/total?style=for-the-badge&color=violet)
 ![Static Badge](https://img.shields.io/badge/supports-vesktop-red?style=for-the-badge)
-
+![Static Badge](https://img.shields.io/badge/supports-vencord-red?style=for-the-badge)
 
 ## Introduction
 
 This is one of the first themes that is made exclusively for [Vencord/Vesktop](https://github.com/Vencord/Vesktop/releases).
+
+Since Discord's update to the new Chromium version, this theme now also supports the regular [Vencord](https://vencord.dev).
 
 ## Features
 
@@ -27,13 +30,13 @@ This is one of the first themes that is made exclusively for [Vencord/Vesktop](h
 
 ## Screenshots
 
-### This is what you will see upon loading the theme for the first time
+### Example Configuration 1
 
-![First Load](./docs/_media/v200default.png)
+![Config 1](./docs/_media/v208_config1.png)
 
-### Layouts can be customized to something like this
+### Example Configuration 2
 
-![Layout Sample](./docs/_media/v200themed.png)
+![Config 2](./docs/_media/v208_config2.png)
 
 ## Apply and customize
 

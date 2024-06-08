@@ -42,7 +42,7 @@
   --modular-hue: 232;
   --modular-saturation: 23%;
   /* Change the percentage to something else */
-  --brand-experiment: #c6a0f6;
+  --brand-500: #c6a0f6;
 
   /* [[ STATUS COLORS ]]  */
   --online-color: #a6e3a1;
@@ -53,7 +53,7 @@
 
   /* [[ CHAT BUBBLES ]] */
   --enable-chat-bubble-border: 0; /* 1 to enable, 0 to disable */
-  --chat-bubble-default: var(--brand-experiment);
+  --chat-bubble-default: var(--brand-500);
   --chat-bubble-replying: #91d7e3;
   --chat-bubble-mentioned: #f5a97f;
   --chat-bubble-automod: #ed8796;
@@ -64,7 +64,7 @@
 
   /* [[ CLIENT LAYOUT ]] */
   --enable-client-border: 1; /* 1 to enable, 0 to disable */
-  --client-border-color: var(--brand-experiment);
+  --client-border-color: var(--brand-500);
   --sidebar-orientation: column;
   /* column-reverse for user panel on top */
   --guild-orientation: row;
