@@ -196,7 +196,11 @@ span[class*=dot_][class*=maskSecondary_],
       .vc-spotify-repeat-track,
       .vc-spotify-repeat-context
     ) {
-    background: color-mix(in srgb, var(--brand-500) 70%, transparent) !important;
+    background: color-mix(
+      in srgb,
+      var(--brand-500) 70%,
+      transparent
+    ) !important;
   }
 
   & .vc-spotify-button-row {
@@ -286,7 +290,7 @@ span[class*=dot_][class*=maskSecondary_],
       margin-bottom: 0px;
 
       & > .scrollableContainer_ff917f {
-        margin: 0 8px 8px 8px
+        margin: 0 8px 8px 8px;
       }
     }
 
@@ -513,7 +517,7 @@ span[class*=dot_][class*=maskSecondary_],
   font-weight: bold;
 }
 
-.botTagVerified__3e0e4 > path{
+.botTagVerified__3e0e4 > path {
   fill: var(--brand-900) !important;
 }
 
@@ -795,7 +799,7 @@ rect[fill="#593695"] {
   border: calc(1px * var(--enable-chat-bubble-border)) solid var(--brand-300);
   border-radius: 6px;
   height: 16px;
-  top: 2px
+  top: 2px;
 }
 
 /* Start of Chat Bubbles */
@@ -952,10 +956,12 @@ rect[fill="#593695"] {
 
 /* [[ PROFILES ]] */
 /* Limit height of user popouts */
+.userPopoutOuter_d67f56 {
+  border-radius: 8px;
+}
+
 [class^="userPopoutInner_"] {
-  max-height: calc(
-    75vh - 28px - var(--custom-user-popout-outside-components-height)
-  );
+  max-height: calc(75vh - 28px);
 }
 
 /* General layout, center items */
@@ -996,7 +1002,8 @@ rect[fill="#593695"] {
   margin: 8px 12px;
 }
 
-.customStatus__6a31a, .customStatus_fe94ef {
+.customStatus__6a31a,
+.customStatus_fe94ef {
   &::before {
     content: "Current status";
     text-transform: uppercase;
@@ -2382,7 +2389,7 @@ path[fill="rgba(35, 165, 90, 1)"] {
 }
 
 /* Match the unread pill with the brand color */
-:is(.pill_f4ac2f,.pill__6b31b) > .item_f9d377 {
+:is(.pill_f4ac2f, .pill__6b31b) > .item_f9d377 {
   background: var(--brand-300);
 }
 
@@ -2441,7 +2448,6 @@ button[class*="lookOutlined__"] {
   }
 }
 
-
 /* Server banner */
 .animatedContainer__0e828 {
   border-radius: 8px;
@@ -2452,7 +2458,7 @@ button[class*="lookOutlined__"] {
   transition: all 150ms ease-in-out;
 
   &:hover {
-    border-color: var(--brand-500);    
+    border-color: var(--brand-500);
   }
 }
 
@@ -2461,7 +2467,7 @@ button[class*="lookOutlined__"] {
   text-align: center;
   background: var(--background-modifier-accent);
 
-  &  > .content__6bf34 {
+  & > .content__6bf34 {
     text-transform: uppercase;
 
     & > .name__4eb92 {
@@ -2515,7 +2521,7 @@ h2.container__43554 {
 }
 
 .notice__99c03 {
-  background: transparent;  
+  background: transparent;
   border-bottom: none;
 }
 
