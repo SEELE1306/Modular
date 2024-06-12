@@ -89,7 +89,7 @@ span[class*=dot_][class*=maskSecondary_],
 .divider__8b90f,
 .tabBar__22a9a,
 .separator__174fc,
-:is(.userPopoutInner_ac0960, .profilePanel_e2cafe) [class*="divider_"],
+/*:is(.userPopoutInner_ac0960, .profilePanel_e2cafe) [class*="divider_"],*/ /* User popout dot (Member Since) */
 .vc-membercount-member-list :is(.vc-membercount-online-dot, .vc-membercount-total-dot) {
   display: none !important;
 }
