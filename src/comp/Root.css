@@ -33,136 +33,32 @@
   --primary-900-hsl: var(--modular-hue) var(--modular-saturation) 0.8%;
 
   /* New brand variables */
-  --brand-100: color-mix(
-    in srgb,
-    #fff calc(97.6% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-130: color-mix(
-    in srgb,
-    #fff calc(95.5% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-160: color-mix(
-    in srgb,
-    #fff calc(92.9% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-200: color-mix(
-    in srgb,
-    #fff calc(90% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-230: color-mix(
-    in srgb,
-    #fff calc(87.1% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-260: color-mix(
-    in srgb,
-    #fff calc(83.7% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-300: color-mix(
-    in srgb,
-    #fff calc(78.8% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-330: color-mix(
-    in srgb,
-    #fff calc(73.3% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-345: color-mix(
-    in srgb,
-    #fff calc(67.5% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-360: color-mix(
-    in srgb,
-    #fff calc(61.2% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-400: color-mix(
-    in srgb,
-    #fff calc(52.9% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-430: color-mix(
-    in srgb,
-    #fff calc(44.9% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-460: color-mix(
-    in srgb,
-    #fff calc(38% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-530: color-mix(
-    in srgb,
-    #000 calc(38% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-560: color-mix(
-    in srgb,
-    #000 calc(44.9% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-600: color-mix(
-    in srgb,
-    #000 calc(52.9% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-630: color-mix(
-    in srgb,
-    #000 calc(61.2% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-645: color-mix(
-    in srgb,
-    #000 calc(67.5% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-660: color-mix(
-    in srgb,
-    #000 calc(73.3% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-700: color-mix(
-    in srgb,
-    #000 calc(78.8% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-730: color-mix(
-    in srgb,
-    #000 calc(83.7% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-760: color-mix(
-    in srgb,
-    #000 calc(87.1% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-800: color-mix(
-    in srgb,
-    #000 calc(90% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-830: color-mix(
-    in srgb,
-    #000 calc(92.9% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-860: color-mix(
-    in srgb,
-    #000 calc(95.5% - 32.5%),
-    var(--brand-500)
-  );
-  --brand-900: color-mix(
-    in srgb,
-    #000 calc(97.6% - 32.5%),
-    var(--brand-500)
-  );
+  --brand-100: color-mix(in srgb, #fff calc(97.6% - 32.5%), var(--brand-500));
+  --brand-130: color-mix(in srgb, #fff calc(95.5% - 32.5%), var(--brand-500));
+  --brand-160: color-mix(in srgb, #fff calc(92.9% - 32.5%), var(--brand-500));
+  --brand-200: color-mix(in srgb, #fff calc(90% - 32.5%), var(--brand-500));
+  --brand-230: color-mix(in srgb, #fff calc(87.1% - 32.5%), var(--brand-500));
+  --brand-260: color-mix(in srgb, #fff calc(83.7% - 32.5%), var(--brand-500));
+  --brand-300: color-mix(in srgb, #fff calc(78.8% - 32.5%), var(--brand-500));
+  --brand-330: color-mix(in srgb, #fff calc(73.3% - 32.5%), var(--brand-500));
+  --brand-345: color-mix(in srgb, #fff calc(67.5% - 32.5%), var(--brand-500));
+  --brand-360: color-mix(in srgb, #fff calc(61.2% - 32.5%), var(--brand-500));
+  --brand-400: color-mix(in srgb, #fff calc(52.9% - 32.5%), var(--brand-500));
+  --brand-430: color-mix(in srgb, #fff calc(44.9% - 32.5%), var(--brand-500));
+  --brand-460: color-mix(in srgb, #fff calc(38% - 32.5%), var(--brand-500));
+  --brand-530: color-mix(in srgb, #000 calc(38% - 32.5%), var(--brand-500));
+  --brand-560: color-mix(in srgb, #000 calc(44.9% - 32.5%), var(--brand-500));
+  --brand-600: color-mix(in srgb, #000 calc(52.9% - 32.5%), var(--brand-500));
+  --brand-630: color-mix(in srgb, #000 calc(61.2% - 32.5%), var(--brand-500));
+  --brand-645: color-mix(in srgb, #000 calc(67.5% - 32.5%), var(--brand-500));
+  --brand-660: color-mix(in srgb, #000 calc(73.3% - 32.5%), var(--brand-500));
+  --brand-700: color-mix(in srgb, #000 calc(78.8% - 32.5%), var(--brand-500));
+  --brand-730: color-mix(in srgb, #000 calc(83.7% - 32.5%), var(--brand-500));
+  --brand-760: color-mix(in srgb, #000 calc(87.1% - 32.5%), var(--brand-500));
+  --brand-800: color-mix(in srgb, #000 calc(90% - 32.5%), var(--brand-500));
+  --brand-830: color-mix(in srgb, #000 calc(92.9% - 32.5%), var(--brand-500));
+  --brand-860: color-mix(in srgb, #000 calc(95.5% - 32.5%), var(--brand-500));
+  --brand-900: color-mix(in srgb, #000 calc(97.6% - 32.5%), var(--brand-500));
 }
 
 /* [[ CUSTOM THEME VARIABLES ]] */
@@ -193,11 +89,7 @@
   --info-warning-foreground: none;
   /* Scrollbars */
   --scrollbar-auto-thumb: var(--brand-500);
-  --scrollbar-auto-track: color-mix(
-    in srgb,
-    var(--brand-500) 25%,
-    transparent
-  );
+  --scrollbar-auto-track: color-mix(in srgb, var(--brand-500) 25%, transparent);
   --scrollbar-thin-thumb: var(--brand-500);
   --scrollbar-thin-track: transparent;
 
@@ -209,5 +101,5 @@
   --font-code-fallback: "monospace", "courier mono", "consolas";
   --text-link: var(--text-normal);
   /* Update versioning scheme */
-  --modular-version: "v2.0.8";
+  --modular-version: "v2.0.9";
 }
