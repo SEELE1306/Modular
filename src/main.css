@@ -1937,15 +1937,6 @@ div[class|="message"] div[class|="markup"] ol {
   color: var(--interactive-normal);
 }
 
-.formTitle-2YQyhj {
-  color: var(--header-primary);
-  font-size: 16px;
-}
-
-.rowContainer-3t7486 {
-  background: var(--channel-icon);
-}
-
 .header_fd6364 {
   padding: 8px;
   margin: 4px 4px 0;
@@ -1972,10 +1963,6 @@ div[class|="message"] div[class|="markup"] ol {
 }
 
 /* [[ FORUM ]] */
-.container-3wLKDe {
-  background: var(--background-primary-alt);
-  margin: 4px;
-}
 
 .container_d331f1,
 .mainCard_a6d69a {
@@ -2010,10 +1997,6 @@ div[class|="message"] div[class|="markup"] ol {
 .theme-dark .pageWrapper_a3a4ce {
   margin: 4px 0 4px 12px;
   background: var(--background-primary-alt);
-}
-
-.arrow-2yY1Tm {
-  filter: brightness(10);
 }
 
 .title_a1cafe,
