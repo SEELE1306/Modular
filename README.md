@@ -7,7 +7,7 @@
 ![Static Badge](https://img.shields.io/badge/supports-vencord-red?style=for-the-badge)
 
 > [!WARNING]
-> Due to a huge Discord update, the theme is completely broken. **You may risk not being able to even open up Vencord/Vesktop.** Please uninstall Vencord/Vesktop for the time being and wait for the theme to be fixed!
+> ~~Due to a huge Discord update, the theme is completely broken. **You may risk not being able to even open up Vencord/Vesktop.** Please uninstall Vencord/Vesktop for the time being and wait for the theme to be fixed!~~ Please update to [v2.0.9](https://github.com/SEELE1306/Modular/releases/tag/v2.0.9) to fix the issue!
 
 ## Introduction
 
