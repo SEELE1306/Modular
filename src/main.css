@@ -1125,59 +1125,6 @@ rect[fill="#593695"] {
   border-radius: 8px;
 }
 
-/* [[ PROFILE PANEL IN DMS ]] */
-
-.profilePanel_b433b4 {
-  margin: calc(4px * var(--enable-client-border));
-  padding: 4px;
-
-  border: calc(2px * var(--enable-client-border)) solid
-    var(--client-border-color);
-  box-sizing: border-box;
-  border-radius: calc(8px + 4px * var(--enable-client-border));
-
-  /* Inner gradient background */
-  & > .userPanelOuter_c69a7b {
-    overflow: hidden;
-    border-radius: calc(8px + 4px * var(--enable-client-border));
-  }
-}
-
-.panelBanner_c3e427 {
-  width: calc(100% - 8px - 2px * var(--enable-client-border) * 2);
-  border-radius: calc(4px * var(--enable-client-border)) !important;
-}
-
-[class*="profilePanelConnections_"] {
-  padding: 0 12px;
-}
-
-[class^="userPanelOverlayBackground__"] > [class*="container__"] > div {
-  width: 100%;
-}
-
-:is(.mutualGuildsList_b433b4, .mutualFriendsList_b433b4) {
-  margin: 4px 0;
-
-  & > ul {
-    margin: 8px 0;
-  }
-
-  & > button {
-    background: transparent;
-  }
-}
-
-[class*="connectionList_"] > div {
-  padding: auto 8px;
-  margin: 8px;
-}
-
-/* Notes section */
-.textarea_dde0a8 {
-  text-align: center;
-}
-
 /* [[ TITLEBAR ]] */
 
 .wordmarkWindows_a934d8 {
@@ -1798,10 +1745,6 @@ div[class|="message"] div[class|="markup"] ol {
   }
 }
 
-.overlayBackground_c69a7b {
-  background: transparent;
-}
-
 .wrapperCommon_a08117 {
   margin-top: -6px;
 }
@@ -2283,5 +2226,22 @@ h2.container_cc72c1 {
 /* VC Container background */
 .wrapper_adcaac {
   background: var(--background-primary-alt);
+  border-radius: calc(8px + 4px * var(--enable-client-border));
+}
+
+/* Fix for Profile Panel in DMs */
+.userPanelInner_c69a7b {
+  border-radius: calc(8px + 4px * var(--enable-client-border));
+  border: calc(2px * var(--enable-client-border)) solid
+    var(--client-border-color);
+  overflow: hidden;
+}
+
+.userPanelOuter_c69a7b {
+  margin: calc(2px + 2px * var(--enable-client-border));
+  height: calc(100% - 8px - 4px * var(--enable-client-border));
+}
+
+.container_ecc60d {
   border-radius: calc(8px + 4px * var(--enable-client-border));
 }
