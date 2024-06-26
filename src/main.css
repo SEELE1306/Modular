@@ -70,7 +70,7 @@ span[class*=dot_][class*=maskSecondary_],
 [class*=automodMessage_]:before,
 .content_cc29d1 .iconContainer_d8bfb3,
 .uploadInput_f298d4,
-/* User options */
+/* User options 
 [class^=userPopoutInner_]:has(#account)>*:not(:has(#account)),
 [class^=userPopoutOverlayBackground_]:has(#account)>*:not(#account),
 .lockIcon_ad4a7c,
