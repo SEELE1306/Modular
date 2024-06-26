@@ -98,8 +98,8 @@
   --font-display: var(--font-main), var(--font-fallback);
   --font-code: var(--font-code), var(--font-code-fallback);
   --font-fallback: "gg sans";
-  --font-code-fallback: "monospace", "courier mono", "consolas";
+  --font-code-fallback: "monospace";
   --text-link: var(--text-normal);
   /* Update versioning scheme */
-  --modular-version: "v2.0.9";
+  --modular-version: "v2.0.10";
 }
