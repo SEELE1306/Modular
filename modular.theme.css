@@ -4,7 +4,7 @@
  * @authorLink https://github.com/SEELE1306
  * @description A highly customizable theme for Vesktop.
  * @license MIT
- * @version 2.0.10
+ * @version 2.1.0
  * @authorId 518795791318384647
  * @discord seele1306
  **/
@@ -13,71 +13,65 @@
 
 @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/main.css);
 
-/* --- CUSTOMIZABLE --- */
+/* --- THIRD PARTY IMPORTS --- */
+/* Should you want to use snippets, place them here */
 
-/* comment out to enable, more add-ons at https://github.com/SEELE1306/CSS-Snippets/tree/main */
-/* Nitro gradients */
-/* @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/comp/nitro_themes.css); */
-/* Optional settings icons in Settings by saltssaumure */
-/* @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); */
+/* --- CUSTOMIZABLE --- */
 
 :root {
   /*
 	* [[ BACKGROUND ]]
-	* Change to none to use solid color theme, or use one of the premade Nitro gradients, or make your own gradient or even add a background (must be an URL) */
+	* Change to none for solid or add a background (must be an URL) */
   --modular-background: none !important;
   --modular-background-blur-strength: 10px;
   /* in px, Default is 10px */
-  --modular-background-brightness: 100%;
-  /* Between 0 and 100% - Default is 100% */
-  --modular-transparency: 25%;
-  /* Between 0 and 50% - Default is 25% */
 
-  /*
-	* Nitro gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
-  * midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea
-	*/
+  /* [[ DISCORD COLORS ]] */
+  --modular-red: #bf616a;
+  --modular-yellow: #ebcb8b;
+  --modular-green: #a3be8c;
+  --modular-orange: #d08770;
+  --modular-teal: #b48ead;
+  --modular-blue: #88c0d0;
 
-  /* [[ OVERALL ACCENT ]] */
-  --modular-hue: 232;
-  --modular-saturation: 23%;
-  /* Change the percentage to something else */
-  --brand-500: #c6a0f6;
+  /* [[ BASE COLORS ]] */
+  --modular-bg0: #262626; /* Primary background color */
+  --modular-bg1: #202020; /* Secondary background color */
+  --modular-bg2: #151515; /* Tertiary background color */
+  --modular-bg3: #323232; /* Quarterary background color */
+  --modular-bg4: #393939; /* Modifier/hover/select background color */
 
-  /* [[ STATUS COLORS ]]  */
-  --online-color: #a6e3a1;
-  --idle-color: #f9e2af;
-  --dnd-color: #f38ba8;
-  --streaming-color: #b4befe;
-  --bot-color: #89b4fa;
+  --modular-text0: #d8c8c4; /* Normal text color */
+  --modular-text1: #f6f1ef; /* Brighter text color */
+  --modular-text2: #cab5b1; /* Darker text color */
 
-  /* [[ CHAT BUBBLES ]] */
-  --enable-chat-bubble-border: 0; /* 1 to enable, 0 to disable */
-  --chat-bubble-default: var(--brand-500);
-  --chat-bubble-replying: #91d7e3;
-  --chat-bubble-mentioned: #f5a97f;
-  --chat-bubble-automod: #ed8796;
+  /* [[ BRAND COLORS ]] */
+  --modular-accent: #a57562; /* Accent color */
+  --modular-flavor: "Rosebox"; /* Flavor name */
+
+  /* [[ BORDERS ]] */
+  --modular-enable-border: 0; /* 1 to enable, 0 to disable. Default is 0 */
+  --modular-cb-width: max-content; /* 100% for chat bubbles spanning the entire screen / max-content for dynamic width, Default is max-content */
+  --modular-border-color: var(--modular-accent);
 
   /* [[ FONT CHANGE ]] */
-  --font-main: "";
-  --font-code: "";
+  --font-main: "Inter";
+  --font-code: "Roboto Mono";
 
   /* [[ CLIENT LAYOUT ]] */
-  --enable-client-border: 1; /* 1 to enable, 0 to disable */
   --client-border-color: var(--brand-500);
-  --sidebar-orientation: column;
+  --modular-sidebar-orientation: column;
   /* column-reverse for user panel on top */
-  --guild-orientation: row;
+  --modular-guild-orientation: row;
   /* row-reverse for guild bar on the right */
-  --client-orientation: row;
+  --modular-client-orientation: row;
   /* row-reverse for server list and user panel on the right */
-  --memberlist-orientation: row;
+  --modular-memberlist-orientation: row;
   /* row-reverse for member list on the left */
-  --friendlist-orientation: row;
+  --modular-friendlist-orientation: row;
   /* row-reverse for now playing tab on the left */
-  --titlebar-name: "insert thing here";
 
-  /* [[ SPOTIFY TRACK BACKGROUND */
-  --blur-amount: 2px; /* higher px = stronger blur, 0 = no blur */
-  --darken-percent: 0.5; /* 0 = album cover is not darkened, 1 = album cover is darkened fully (black) */
+  /* [[ SPOTIFY TRACK BACKGROUND ]] */
+  --modular-spotify-bg-blur: 2px; /* higher px = stronger blur, 0 = no blur */
+  --modular-spotify-darken: 0.5; /* 0 = album cover is not darkened, 1 = album cover is darkened fully (black) */
 }
