@@ -39,6 +39,9 @@ Since Discord's update to the new Chromium version, this theme now also supports
 
 ## Apply and customize
 
+> [!IMPORTANT]
+> Starting from future releases, there will be additional color schemes (flavors) to choose from. The theme names will then be `modular_{flavor_name}.theme.css`. For example, the current Rosebox flavor will become `modular_rosebox.theme.css`. If you want to create your custom color scheme, start from the default `modular.theme.css` file.
+
 ### Apply
 
 There are several methods to apply this theme:
@@ -77,6 +80,8 @@ There are several methods to apply this theme:
 A large part of the following guide is also available inside the `modular.theme.css` file.
 
 To start customizing your layout, copy and paste the file `modular.theme.css` into your QuickCSS.
+
+The default color scheme (flavor) is Rosebox, and there are two preloaded fonts: Inter, Roboto Mono.
 
 Additional supported add-ons are available in `modular.theme.css`. For more snippets, you can visit [here](https://github.com/SEELE1306/CSS-Snippets).
 
