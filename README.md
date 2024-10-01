@@ -6,6 +6,9 @@
 ![Static Badge](https://img.shields.io/badge/supports-vesktop-red?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/supports-vencord-red?style=for-the-badge)
 
+> [!IMPORTANT]
+> The theme has been largely rewritten. Please update to the latest version to ensure functionality.
+
 ## Introduction
 
 This is one of the first themes that is made exclusively for [Vencord/Vesktop](https://github.com/Vencord/Vesktop/releases).
@@ -15,28 +18,24 @@ Since Discord's update to the new Chromium version, this theme now also supports
 ## Features
 
 - High customizability:
-  - **_Add a pre-made Nitro theme or background of your choice_** and adjust the brightness, blur as well as transparency
-  - **Client global accent** using the HSL scheme
-  - A **second accent color** to highlight important elements and add style
-  - **Modules** (user panel, member list, guild list etc.) that can be flipped around
-  - Adjustable **chat bubble and status colors**
-  - Adjustable **primary and code font**
-  - **Add a custom name on the titlebar** to make the layout more personal
-- **A revamped look** for many elements, including profile panels and modals, Spotify controls, guild list and many more!
-- **Compatibility and quality of life changes** for many of Vesktop's existing plugins
-- Several **_add-ons_** are available separately in the `modular.theme.css` file
+  - Customizable base, accent and Discord colors (red, yellow, green, etc.)
+  - Modules (user panel, member list, guild list etc.) that can be flipped around
+  - Adjustable primary and code font
+  - Add a custom name on the titlebar to make the layout more personal
+- A revamped look for many elements, including profile panels and modals, Spotify controls and many more!
+- Compatibility and quality of life changes for many of Vesktop's existing plugins
 - Active support (to my ability)
 - Some of the elements of this theme are available separately as snippets. Check them out [here](https://github.com/SEELE1306/CSS-Snippets).
 
 ## Screenshots
 
-### Example Configuration 1
+### Default Configuration
 
-![Config 1](./docs/_media/v208_config1.png)
+![Config 1](./docs/_media/v210default.png)
 
-### Example Configuration 2
+### Example Configuration
 
-![Config 2](./docs/_media/v208_config2.png)
+![Config 2](./docs/_media/v210_config1.png)
 
 ## Apply and customize
 
@@ -50,7 +49,7 @@ There are several methods to apply this theme:
 
 - Download the file `modular.theme.css` from this repository.
 - Open Settings > Vencord > Themes > Local Themes > Open Themes Folder.
-- Paste the downloaded file into the **themes** folder.
+- Paste the downloaded file into the themes folder.
 
 </details>
 
@@ -59,7 +58,7 @@ There are several methods to apply this theme:
 <summary>Via Online Themes</summary>
 
 - Open Settings > Vencord > Themes > Online Themes.
-- Paste the following link into **Theme Links**: `https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css`
+- Paste the following link into Theme Links: `https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css`
 - Enter or mouse-click outside the Online Themes box to apply
 
 </details>
@@ -69,7 +68,7 @@ There are several methods to apply this theme:
 <summary>Via QuickCSS</summary>
 
 - Open Settings > Vencord > Vencord > Open QuickCSS File
-- Paste the following line as your **first line (ahead of any other custom CSS)**: `@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css);`.
+- Paste the following line as your first line (ahead of any other custom CSS): `@import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/modular.theme.css);`.
 
 </details>
 
