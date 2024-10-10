@@ -68,10 +68,10 @@
 #user-settings-cog > .scroller_d90b3d > .item_d90b3d, 
 /* Notes in profile modal */
 .aboutMeGuildIcon_b05b69,
-/* Hide member count icons *
-.vc-membercount-member-list :is(.vc-membercount-online-dot, .vc-membercount-total-dot),
 /* Call icon */
-.icon_d76df7 
+.icon_d76df7,
+/* Bottom gradient (server discovery) */
+.gradient_aa1bff, 
 /* Unknown */
 .children_fc4f04:after,
 .iconContainerLeft_d90b3d,
@@ -2313,4 +2313,36 @@ h2.container_cc72c1 {
 .childWrapperNoHoverBg_f90abb /* Favorites button */,
 .circleIconButton_db6521 /* Add server and discover button */ {
   background: var(--background-modifier-accent);
+}
+
+/* New channel app launcher button */
+.channelAppLauncher_df39bd {
+  margin-bottom: 16px;
+  margin-right: 4px;
+
+  & button {
+    top: 4px;
+    background: var(--background-modifier-accent);
+  }
+}
+
+/* Server discovery footer */
+.footer_aa1bff {
+  background: none;
+}
+
+/* Members list */
+.membersGroup_cbd271 {
+  margin: 8px 0px 8px 8px;
+  height: 24px;
+  padding: 4px;
+  background: var(--background-modifier-accent);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Activity tab at the top of members list */
+.header_bc6acb {
+  position: relative;
+  left: 4px;
 }
