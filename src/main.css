@@ -2022,7 +2022,8 @@ h2.container_cc72c1 {
 .container_a6d69a /* Forum page */,
 .searchResultsWrap_c2b47d /* Search results wrap */,
 .notice_dd5a33 /* Notice */,
-.wrapper_d880dc.video_d880dc /* Video call container */ {
+.wrapper_d880dc.video_d880dc /* Video call container */,
+.list_f3abf4 /* Message request screen */ {
   border-radius: calc(8px + 4px * var(--modular-enable-border)) !important;
   border: calc(2px * var(--modular-enable-border)) solid
     var(--modular-border-color);
