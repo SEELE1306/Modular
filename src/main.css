@@ -2080,6 +2080,7 @@ h2.container_cc72c1 {
 .userPanelOuter_c69a7b {
   margin: calc(4px + 2px * var(--modular-enable-border));
   height: calc(100% - 8px - 4px * var(--modular-enable-border));
+  border-radius: calc(8px + 4px * var(--modular-enable-border));
 }
 
 .container_ecc60d {
