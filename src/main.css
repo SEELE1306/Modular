@@ -13,11 +13,12 @@
   --font-code: "Roboto Mono";
   --modular-background-blur-strength: 5px;
 
-  --modular-sidebar-orientation: column-reverse;
-  --modular-guild-orientation: row-reverse;
+  --modular-sidebar-orientation: column;
+  --modular-guild-orientation: row;
   --modular-memberlist-orientation: row;
   --modular-friendlist-orientation: row;
   --modular-flavor: "Rosebox";
+  --modular-version: "v2.1.2-20241231"; /* testing */
   --modular-spotify-bg-blur: 5px; /* higher px = stronger blur, 0 = no blur */
   --modular-spotify-darken: 0.25; /* 0 = album cover is not darkened, 1 = album cover is darkened fully (black) */
 
@@ -64,8 +65,6 @@
 .aboutMeGuildIcon_b05b69,
 /* Call icon */
 .icon_d76df7,
-/* Bottom gradient (server discovery) */
-.gradient_f8ec41, 
 /* Unknown */
 .children_fc4f04:after,
 .iconContainerLeft_d90b3d,
@@ -99,7 +98,7 @@
   overflow: hidden;
   padding: 14px 12px;
   margin-bottom: 8px;
-
+  
   border-radius: 8px;
 
   &::before {
@@ -110,11 +109,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(
-        rgba(0, 0, 0, var(--modular-spotify-darken)),
-        rgba(0, 0, 0, var(--modular-spotify-darken))
-      ),
-      var(--vc-spotify-track-image) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, var(--modular-spotify-darken)), rgba(0, 0, 0, var(--modular-spotify-darken))), var(--vc-spotify-track-image) center/cover no-repeat;
     clip-path: inset(0);
   }
 
@@ -126,11 +121,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(
-        rgba(0, 0, 0, var(--modular-spotify-darken)),
-        rgba(0, 0, 0, var(--modular-spotify-darken))
-      ),
-      var(--vc-spotify-track-image) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, var(--modular-spotify-darken)), rgba(0, 0, 0, var(--modular-spotify-darken))), var(--vc-spotify-track-image) center/cover no-repeat;
     opacity: 0.5;
     filter: blur(var(--modular-spotify-bg-blur));
     transform: scale(20);
@@ -240,7 +231,7 @@
   background: var(--background-primary);
   border-radius: 8px;
   border-bottom: none;
-
+  
   padding: 5px 8px;
 }
 
@@ -280,13 +271,13 @@
 
   /* Slowmode/typing indicators */
   & > :last-child[class^="typing"] {
-    top: -28px;
-    right: 28px;
+    top: -24px;
+    right: 24px;
     padding: 0px 16px 0px 8px;
     margin-left: auto;
     width: fit-content;
     border-radius: 6px;
-    background: var(--background-tertiary);
+    background: var(--brand-700);
   }
 
   & .buttons_d0696b {
@@ -387,9 +378,9 @@
   padding: 0;
   left: 0;
   border-radius: 4px;
-  margin: 8px;
+  margin: 4px 8px;
   width: fit-content !important;
-  background: var(--background-tertiary);
+  background: var(--brand-700) !important;
   right: unset;
 
   &:active {
@@ -415,17 +406,10 @@
   margin: 0px 24px 8px 0px;
   padding: 4px 0;
   border-radius: 8px !important;
-  background: var(--background-tertiary);
 }
 
 .replyBar_b11c5e {
   background: var(--background-tertiary);
-}
-
-/* Positions both the *new messages* and *viewing old messages* bars on top of the channel text area. */
-.barBase_cf58b5 {
-  --bar-height: 24px;
-  --bar-edges: 24px;
 }
 
 .messagesWrapper_e2e187:has(.newMessagesBar_cf58b5):has(
@@ -433,9 +417,8 @@
   )
   .barBase_cf58b5 {
   align-items: flex-start;
-  height: var(--bar-height);
+  height: 24px;
   overflow: hidden;
-  width: calc(50% - var(--bar-edges));
 }
 
 .messagesWrapper_e2e187:has(.jumpToPresentBar_cf58b5) .newMessagesBar_cf58b5 {
@@ -446,32 +429,7 @@
   margin-right: 4px;
 }
 
-.newMessagesBar_cf58b5 {
-  height: 24px;
-  margin-bottom: 6px;
-  margin-left: calc(var(--bar-edges) * -1 + 12px);
-  border-radius: 6px;
-  inset: auto var(--bar-edges) 0;
-  background: var(--background-tertiary);
 
-  &:hover .span_cf58b5 {
-    animation: vertiscroll 0.5s linear forwards;
-    display: block;
-    height: auto;
-    overflow: visible;
-    white-space: normal;
-  }
-}
-
-@keyframes vertiscroll {
-  0% {
-    transform: translateY(0%);
-  }
-
-  100% {
-    transform: translateY(calc(-100% + var(--bar-height)));
-  }
-}
 
 /* [[ STAFF TAGS ]] */
 [class*="botTag_"] {
@@ -543,16 +501,6 @@ code:not(code.inline) {
   width: max-content;
 }
 
-/* [[ ROLE PILLS ]] */
-.role_f9575e.pill_f9575e {
-  padding: 4px 0;
-  border: none;
-
-  & .roleName_f9575e {
-    padding: 4px;
-    margin-left: -6px;
-  }
-}
 
 /* Same button class */
 .button_f9d37d {
@@ -564,37 +512,6 @@ code:not(code.inline) {
   border: none;
   padding: 1px 3px;
   background: var(--background-floating);
-}
-
-/* Also does the same for Role Permissions plugin */
-.role_e4010c.rolePill_fa2f72 {
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  border-radius: 8px;
-  border: none;
-
-  & .roleRemoveButton_f9575e {
-    position: unset;
-    height: 100%;
-    margin-left: 0;
-    margin-right: 2px;
-
-    & .roleCircle_a26d7b {
-      border-radius: unset;
-      margin: unset;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      mix-blend-mode: overlay;
-      filter: brightness(0.5);
-      text-align: center;
-    }
-  }
-
-  & .roleName_e4010c {
-    padding: 4px;
-  }
 }
 
 /* [[ MAIN BACKGROUND COMPONENTS ]] */
@@ -619,6 +536,7 @@ code:not(code.inline) {
   height: calc(100% - 32px);
   border-radius: 12px;
   flex-direction: var(--modular-guild-orientation);
+  
 }
 
 .guilds_a4d4d9 {
@@ -628,6 +546,7 @@ code:not(code.inline) {
 
 .wrapper_fea3ef {
   background: var(--background-primary);
+  
 }
 
 /* [[ STATUS (ALTERNATIVE) ]] */
@@ -690,8 +609,7 @@ rect[fill="#593695"] {
 [class^="repliedMessage_"] > .username_f9f2ca,
 .member_a31c43 .username_d272d6 {
   filter: brightness(1.2);
-  background: color-mix(in srgb, currentColor 20%, transparent);
-
+  background: color-mix(in srgb, currentColor 20%, var(--background-floating));
   font-weight: bold;
   margin-right: 4px;
   padding: 0 6px;
@@ -700,7 +618,7 @@ rect[fill="#593695"] {
 
   &:hover {
     text-decoration: none;
-    background: color-mix(in srgb, currentColor 40%, transparent);
+    background: color-mix(in srgb, currentColor 40%, var(--background-floating));
   }
 }
 
@@ -863,11 +781,7 @@ rect[fill="#593695"] {
   background: color-mix(in srgb, var(--chat-bubble-replying) 25%, transparent);
 
   &:hover {
-    background: color-mix(
-      in srgb,
-      var(--chat-bubble-replying) 50%,
-      transparent
-    );
+    background: color-mix(in srgb, var(--chat-bubble-replying) 50%, transparent);
   }
 }
 
@@ -881,11 +795,7 @@ rect[fill="#593695"] {
   background: color-mix(in srgb, var(--chat-bubble-mentioned) 25%, transparent);
 
   &:hover {
-    background: color-mix(
-      in srgb,
-      var(--chat-bubble-mentioned) 50%,
-      transparent
-    );
+    background: color-mix(in srgb, var(--chat-bubble-mentioned) 50%, transparent);
   }
 }
 
@@ -909,7 +819,7 @@ rect[fill="#593695"] {
   overflow: hidden;
   border-left: none;
   z-index: 0;
-  width: 640px;
+  width: max-content;
   background: inherit;
   margin-top: 8px;
 
@@ -1016,13 +926,12 @@ rect[fill="#593695"] {
 /* [[ MEMBERS LIST ]] */
 .members_cbd271 {
   background: var(--background-primary);
-
+  
   margin: 4px;
   border-radius: 8px;
 }
 
 .memberInner_a31c43 {
-  margin-left: 4px;
   border-radius: 8px;
 }
 
@@ -1030,8 +939,8 @@ rect[fill="#593695"] {
   margin: 8px 0 8px 8px !important;
   padding: 8px;
   align-items: center;
-  border-radius: 4px;
-  background: var(--background-secondary);
+  border-radius: 8px;
+  background: var(--background-floating);
 
   & span {
     font-weight: bold;
@@ -1043,7 +952,7 @@ rect[fill="#593695"] {
   flex-direction: column;
   margin: 4px;
   border-radius: 8px;
-
+  
   background: var(--background-primary) !important;
 }
 
@@ -1156,6 +1065,7 @@ rect[fill="#593695"] {
 .searchBar_f0963d {
   background: var(--background-primary);
 
+  
   margin: 4px;
   border-radius: 8px;
   box-shadow: none;
@@ -1189,7 +1099,7 @@ rect[fill="#593695"] {
   padding: 0;
   margin: 0;
   border-radius: 8px;
-
+  
   overflow: hidden;
   background: var(--background-primary) !important;
 
@@ -1296,7 +1206,6 @@ rect[fill="#593695"] {
   box-sizing: border-box;
   overflow: hidden;
   background: transparent;
-
   margin: 4px;
   border-radius: 8px;
 }
@@ -1323,7 +1232,6 @@ rect[fill="#593695"] {
 .container_fc4f04 {
   display: flex;
   background: var(--background-primary) !important;
-
   max-width: calc(100% - 8px);
   margin: 4px;
   padding: 8px;
@@ -1451,7 +1359,6 @@ div[class|="message"] div[class|="markup"] ol {
   margin: 4px;
   border-radius: 8px;
   background: var(--background-primary);
-
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -1767,7 +1674,6 @@ span[class*="headerLabel_"],
   margin: 8px 0;
 }
 
-/* [[ ADDED IN v2.0.0 ]] */
 .container_eedf95 {
   position: relative;
   top: 12px;
@@ -1954,12 +1860,11 @@ h2.container_cc72c1 {
 
 .main_d8215a /* Server welcome screen */,
 .container_a6d69a /* Forum page */,
-.searchResultsWrap_c2b47d /* Search results wrap */,
+.container_eedf95 /* Search results wrap */,
 .notice_dd5a33 /* Notice */,
 .wrapper_d880dc.video_d880dc /* Video call container */,
 .list_f3abf4 /* Message request screen */ {
   border-radius: 8px !important;
-
   margin: 4px;
   background: var(--background-primary);
 }
@@ -1990,7 +1895,7 @@ h2.container_cc72c1 {
 .theme-dark .activityPanel_a4d4d9 {
   background: var(--background-primary);
   border-radius: 8px !important;
-
+  
   margin-bottom: 4px;
   padding: 5px;
 }
@@ -1998,23 +1903,6 @@ h2.container_cc72c1 {
 /* VC Container background */
 .wrapper_adcaac {
   background: var(--background-primary);
-  border-radius: 8px;
-}
-
-/* Fix for Profile Panel in DMs */
-.userPanelInner_c69a7b {
-  border-radius: 8px;
-
-  overflow: hidden;
-}
-
-.userPanelOuter_c69a7b {
-  margin: 4px;
-  height: calc(100% - 8px);
-  border-radius: 8px;
-}
-
-.container_ecc60d {
   border-radius: 8px;
 }
 
@@ -2097,11 +1985,7 @@ h2.container_cc72c1 {
     .pronounsTooltip_c32acf > div,
     .userTagUsername_c32acf
   ) {
-  background: color-mix(
-    in srgb,
-    var(--profile-gradient-primary-color) 50%,
-    transparent
-  );
+  background: color-mix(in srgb, var(--profile-gradient-primary-color) 50%, transparent);
 }
 
 /* Remove the dot spacers in elements */
@@ -2161,20 +2045,12 @@ h2.container_cc72c1 {
   border-radius: 6px;
 
   &:hover {
-    background: color-mix(
-      in srgb,
-      var(--profile-gradient-secondary-color) 50%,
-      transparent
-    );
+    background: color-mix(in srgb, var(--profile-gradient-secondary-color) 50%, transparent);
   }
 }
 
 .descriptionClamp_fc5c48 > .markup_f8f345 {
-  background: color-mix(
-    in srgb,
-    var(--profile-gradient-primary-color) 50%,
-    transparent
-  );
+  background: color-mix(in srgb, var(--profile-gradient-primary-color) 50%, transparent);
   padding: 6px;
   border-radius: 6px;
 }
@@ -2245,12 +2121,7 @@ h2.container_cc72c1 {
 
 /* New channel app launcher button */
 .channelAppLauncher_df39bd button {
-  background: var(--background-primary);
-}
-
-/* Server discovery footer */
-.footer_f8ec41 {
-  background: none;
+    background: var(--background-primary);
 }
 
 /* Members list */
@@ -2278,4 +2149,75 @@ h2.container_cc72c1 {
 .applicationStore_cecc86 {
   margin: 4px;
   border-radius: 8px;
+}
+
+/* v2.1.2 fixes */
+/* Server discovery footer */
+.footer_d71945 {
+  background: none;
+}
+
+/* Removing elements */
+/* Bottom gradient (server discovery) */
+.gradient_d71945 {
+  display: none;
+} 
+
+/* Fix new messages bar */
+.newMessagesBar_cf58b5 {
+  height: 32px;
+  margin-top: 8px;
+  border-radius: 4px;
+  background: var(--brand-700) !important;
+  justify-self: center;
+}
+
+/* Reactions */
+.container_f2bfbb {
+  border-radius: 8px;
+}
+
+.theme-dark .reactorDefault_f2bfbb {
+  box-shadow: none;
+}
+
+.reactor_f2bfbb {
+  height: 40px;
+  background: var(--background-secondary);
+  margin: 8px;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+
+/* DM panel */
+.outer_c69a7b {
+  border-radius: 8px;
+  margin: 4px;
+  max-height: calc(100% - 8px);
+
+  & > .inner_c69a7b {
+    border-radius: 8px;
+  }
+}
+
+/* Place search bar separate from other elements in the toolbar */
+.search_ff5f90 {
+  order: -1;
+}
+
+/* Prevent channel name from overlapping with arrow */
+.mainContent_a08117 {
+  margin-left: 20px;
+}
+
+/* Fixing role pills */
+.role_f9575e.pill_f9575e {
+  padding: 4px 0;
+  border: none;
+  border-radius: 6px;
+
+  & .roleName_f9575e {
+    padding: 6px;
+    margin-left: -6px;
+  }
 }
