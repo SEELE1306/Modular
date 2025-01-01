@@ -4,7 +4,7 @@
  * @authorLink https://github.com/SEELE1306
  * @description A highly customizable theme for Vesktop.
  * @license MIT
- * @version 2.1.1
+ * @version 2.1.2-20241231
  * @authorId 518795791318384647
  * @discord seele1306
  **/
@@ -12,9 +12,6 @@
 /* --- IMPORT MAIN FILE --- */
 
 @import url(https://raw.githubusercontent.com/SEELE1306/Modular/release/src/main.css);
-
-/* --- THIRD PARTY IMPORTS --- */
-/* Should you want to use snippets, place them here */
 
 /* --- CUSTOMIZABLE --- */
 
@@ -71,3 +68,6 @@
   --modular-spotify-bg-blur: 2px; /* higher px = stronger blur, 0 = no blur */
   --modular-spotify-darken: 0.5; /* 0 = album cover is not darkened, 1 = album cover is darkened fully (black) */
 }
+
+/* --- THIRD PARTY IMPORTS --- */
+/* Should you want to use snippets, place them here */
