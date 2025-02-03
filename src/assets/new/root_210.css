@@ -251,21 +251,9 @@
 
   --channels-default: var(--modular-text2);
 
-  --background-modifier-accent: color-mix(
-    in srgb,
-    var(--modular-bg4) 40%,
-    transparent
-  );
-  --background-modifier-hover: color-mix(
-    in srgb,
-    var(--modular-bg4) 70%,
-    transparent
-  );
-  --background-modifier-selected: color-mix(
-    in srgb,
-    var(--modular-bg4) 100%,
-    transparent
-  );
+  --background-modifier-accent: color-mix(in srgb,var(--modular-bg4) 40%, transparent);
+  --background-modifier-hover: color-mix(in srgb,var(--modular-bg4) 70%, transparent);
+  --background-modifier-selected: color-mix(in srgb, var(--modular-bg4) 100%, transparent);
 
   --mention-background: color-mix(in srgb, var(--brand-700) 50%, transparent);
 
@@ -286,11 +274,7 @@
 
   /* Scrollbars */
   --scrollbar-auto-thumb: var(--modular-accent);
-  --scrollbar-auto-track: color-mix(
-    in srgb,
-    var(--modular-accent) 25%,
-    transparent
-  );
+  --scrollbar-auto-track: color-mix(in srgb, var(--modular-accent) 25%, transparent);
   --scrollbar-thin-thumb: var(--modular-accent);
   --scrollbar-thin-track: transparent;
 
@@ -303,5 +287,5 @@
   --font-code: var(--font-code), monospace;
 
   /* Update versioning scheme */
-  --modular-version: "v2.1.1-20241117";
+  --modular-version: "v2.1.2";
 }
