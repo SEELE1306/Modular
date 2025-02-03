@@ -7,7 +7,7 @@
 ![Static Badge](https://img.shields.io/badge/supports-vencord-red?style=for-the-badge)
 
 > [!IMPORTANT]
-> v2.1.1 has modified some elements in the `modular.theme.css` file. It is recommended to reload this file for the best experience.
+> v2.1.2 has modified some elements in the `modular.theme.css` file. It is recommended to reload this file for the best experience.
 
 ## Introduction
 
