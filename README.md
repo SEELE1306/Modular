@@ -7,8 +7,7 @@
 ![Static Badge](https://img.shields.io/badge/supports-vencord-red?style=for-the-badge)
 
 > [!IMPORTANT]
-> v2.1.2 has modified some elements in the `modular.theme.css` file. It is recommended to reload this file for the best experience.
-
+> Yes, Discord has ruined everything. It is unlikely that I will be able to fix the theme in its current condition.
 ## Introduction
 
 This is one of the first themes that is made exclusively for [Vencord/Vesktop](https://github.com/Vencord/Vesktop/releases).
